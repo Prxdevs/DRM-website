@@ -1,0 +1,421 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d35400;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    display: none;
+    width: 180px;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background: #f0f0f0;
+}
+
+/* Show dropdown on hover (Desktop) */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Slider Section */
+.slider {
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Slider Arrows */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Slider Section */
+.slider {
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Slider Arrows */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*  */
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 0 25px;
+}
+
+.features h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.subtitle {
+    max-width: 700px;
+    margin: 10px auto;
+    color: gray;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.feature-box img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-weight: 600;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background: goldenrod;
+    margin: 5px auto;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Show dropdown menu on click (Mobile) */
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    /* Show menu icon */
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.why-drm {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #f8fdf9;
+}
+
+/* Title Styling */
+.why-drm h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Divider */
+.divider img {
+    width: 30px;
+    margin: 10px 0;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Video Styling */
+.video-container video {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    text-align: left;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    width: 40px;
+    height: 40px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.footer {
+    padding: 40px 20px;
+    color: #333;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-section .logo p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #666;
+}
