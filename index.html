@@ -40,8 +40,8 @@
                             <li><a href="#">Organic Rice</a></li>
                         </ul>
                     </li> -->
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Outlets</a></li>
+                    <li><a href="#product-section">Products</a></li>
+                    <li><a href="#outlet-section">Outlets</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -59,12 +59,12 @@
             <div class="slide">
                 <img src="./images/slider1.png" alt="Slide 1">
             </div>
-            <div class="slide">
+            <!-- <div class="slide">
                 <img src="./images/slider2.png" alt="Slide 2">
             </div>
             <div class="slide">
                 <img src="./images/slider3.jpg" alt="Slide 3">
-            </div>
+            </div> -->
         </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
@@ -73,16 +73,16 @@
         let currentIndex = 0;
         const slides = document.querySelectorAll(".slide");
         const totalSlides = slides.length;
-        
+
         function moveSlide(direction) {
             currentIndex += direction;
-            
+
             if (currentIndex < 0) {
                 currentIndex = totalSlides - 1;
             } else if (currentIndex >= totalSlides) {
                 currentIndex = 0;
             }
-            
+
             document.querySelector(".slider-container").style.transform = `translateX(-${currentIndex * 100}%)`;
         }
     </script>
@@ -90,9 +90,9 @@
     <!-- Features Section -->
 
     <section class="features">
-        <div style="display: flex; flex-direction: column; align-items: center;"> 
+        <div style="display: flex; flex-direction: column; align-items: center;">
             <h2 style="font-size: 36px;">Best Basmati Rice Manufacturers, Exporters & Suppliers in India</h2>
-            &#127793;
+            <img src="./images/wheat.png" width="20px" />
             <p class="subtitle" style="margin: 20px auto 0; max-width: 720px; text-align: center;">Jashn is an effort to
                 make your everyday mealtime a flavorful celebration. We strive to
                 bring aromatic basmati rice to your plate — directly from paddy fields.</p>
@@ -129,8 +129,9 @@
     <!-- section 3 -->
     <!-- Section 3: Two-Column Layout -->
     <section style="padding: 25px 20px 20px; background-color: #fff;">
-        <div style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; align-items: center; justify-content: center; gap: 20px;">
-            
+        <div
+            style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; align-items: center; justify-content: center; gap: 20px;">
+
             <!-- Text Content -->
             <div style="flex: 1; max-width: 50%; min-width: 300px;">
                 <h2 style="font-size: 32px; font-weight: bold; color: #222; margin-bottom: 15px; text-align: left;">
@@ -149,28 +150,29 @@
                     standards.
                 </p>
             </div>
-    
+
             <!-- Image Section -->
             <div style="flex: 1; max-width: 50%; min-width: 300px; display: flex; justify-content: center;">
-                <img src="./images/s31.png" alt="Basmati Rice Products" 
+                <img src="./images/poster1.png" alt="Basmati Rice Products"
                     style="width: 100%; height: auto; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);">
             </div>
-    
+
         </div>
     </section>
-    
+
 
 
     <!-- Section 4: Two-Column Layout -->
     <section style="padding: 25px 20px 20px; background-color: #f9f9f9;">
-        <div style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; align-items: center; justify-content: center; gap: 20px;">
-            
+        <div
+            style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; align-items: center; justify-content: center; gap: 20px;">
+
             <!-- Image Section -->
             <div style="flex: 1; max-width: 50%; min-width: 300px; display: flex; justify-content: center;">
-                <img src="./images/s31.png" alt="Basmati Rice Products" 
+                <img src="./images/poster2.png" alt="Basmati Rice Products"
                     style="width: 100%; height: auto; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);">
             </div>
-    
+
             <!-- Text Content -->
             <div style="flex: 1; max-width: 50%; min-width: 300px;">
                 <h2 style="font-size: 28px; font-weight: bold; color: #222; margin-bottom: 15px; text-align: left;">
@@ -189,55 +191,55 @@
                     standards.
                 </p>
             </div>
-    
+
         </div>
     </section>
-    
+
 
     <section class="why-drm">
         <h2>Why DRM Basmati Rice</h2>
-        <div class="divider">
-            <img src="wheat-icon.png" alt="Wheat Icon">
+        <div style="width: 100%; justify-content: center; ">
+            <img style="width: 20px;" src="./images/wheat.png" alt="Wheat Icon">
         </div>
-    
+
         <div class="content">
             <!-- Video Section -->
             <div class="video-container">
-                <iframe width="500" height="315"
-                    src="https://www.youtube.com/embed/syVkm2NiggM?si=TNYU_ahdEtR_BK1Y" title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/syVkm2NiggM?si=TNYU_ahdEtR_BK1Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
             </div>
-    
+
             <!-- Features Section -->
             <div class="features">
                 <div class="feature">
-                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="./images/checked.png" />
                     <div>
                         <h3>Authenticity Promised</h3>
                         <p>We deliver authentic and premium basmati rice right from paddy fields to your plate.</p>
                     </div>
                 </div>
-    
+
                 <div class="feature">
-                    <img src="shield-icon.png" alt="Shield">
+                    <img src="./images/credit-card.png" />
                     <div>
                         <h3>Secure Payment</h3>
                         <p>We practice optimum safety & security of your confidential payment details.</p>
                     </div>
                 </div>
-    
+
                 <div class="feature">
-                    <img src="thumbs-up-icon.png" alt="Quality">
+                    <img src="./images/badge.png" />
                     <div>
                         <h3>Consistent Quality</h3>
                         <p>We offer consistent quality across all varieties.</p>
                     </div>
                 </div>
-    
+
                 <div class="feature">
-                    <img src="support-icon.png" alt="Support">
+                    <img src="./images/help-desk.png" />
                     <div>
                         <h3>Friendly Support</h3>
                         <p>Need help? Get in touch with our customer support.</p>
@@ -246,28 +248,28 @@
             </div>
         </div>
     </section>
-    
 
 
-    <section class="featured-products">
+
+    <section id="product-section" class="featured-products">
         <h2>Feature Products</h2>
-    
-        
+
+
         <div class="swiper product-slider">
             <div class="swiper-wrapper">
                 <!-- Dummy Product 1 -->
                 <div class="swiper-slide">
-                    <img src="./images/493657306_1_1024x10248aa5.jpg" alt="Product 1">
+                    <img src="./images/Food_Bag_Packaging_Mockup_04.png" alt="Product 1">
                     <p>DRM </p>
                 </div>
                 <!-- Dummy Product 2 -->
                 <div class="swiper-slide">
-                    <img src="./images/493657306_1_1024x10248aa5.jpg" alt="Product 2">
+                    <img src="./images/BLACK BERRY RICE.png" alt="Product 2">
                     <p>DRM Gold</p>
                 </div>
                 <!-- Dummy Product 3 -->
                 <div class="swiper-slide">
-                    <img src="./images/493657306_1_1024x10248aa5.jpg" alt="Product 3">
+                    <img src="./images/RED CHERRY RICE.png" alt="Product 3">
                     <p>Redcherry</p>
                 </div>
                 <!-- Dummy Product 4 -->
@@ -276,100 +278,107 @@
                     <p>Ricebran</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/493657306_1_1024x10248aa5.jpg" alt="Product 4">
+                    <img src="./images/BLACK BERRY RICE.png" alt="Product 4">
                     <p>Blackberry</p>
                 </div>
             </div>
 
             <!-- Navigation Arrows -->
-                <div class="swiper-button-next"></div>
+            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
 
             <!-- Pagination Dots -->
             <div class="swiper-pagination"></div>
         </div>
-    
+
     </section>
 
 
-    <section class="featured-products">
+    <section id="outlet-section" class="featured-products">
         <h2>Outlets</h2>
-    
-        
+
+
         <div class="card-container">
             <div class="card">
-                <img src="your-image.jpg" alt="Image">
+                <!-- <img src="your-image.jpg" alt="Image"> -->
                 <div class="card-content">
                     <h3>Gondal</h3>
-                    <p>Card description goes here. It can be a small summary of the content.</p>
-                    <button onclick="openModal('ABC Realty', 'John Doe', '+1234567890')">View</button>
+                    <p>Looking to connect with our distributor in Gondal? Click below and get in touch with our local
+                        expert!</p>
+                    <button onclick="openModal('Rajendrakumar Lalji', 'Mehulbhai', '98240 63068')">View</button>
                 </div>
             </div>
             <div class="card">
-                <img src="your-image.jpg" alt="Image">
+                <!-- <img src="your-image.jpg" alt="Image"> -->
                 <div class="card-content">
                     <h3>Surat</h3>
-                    <p>Card description goes here. It can be a small summary of the content.</p>
-                    <button onclick="openModal('ABC Realty', 'John Doe', '+1234567890')">View</button>
+                    <p>Need assistance or a partnership in Surat? Our distributor is just a click away—reach out now!
+                    </p>
+                    <button
+                        onclick="openModal('Shree Tirupati Balaji Trading Company', 'Vijay Bhai', '95127 07260')">View</button>
                 </div>
             </div>
             <div class="card">
-                <img src="your-image.jpg" alt="Image">
+                <!-- <img src="your-image.jpg" alt="Image"> -->
                 <div class="card-content">
                     <h3>Rajkot</h3>
-                    <p>Card description goes here. It can be a small summary of the content.</p>
-                    <button onclick="openModal('ABC Realty', 'John Doe', '+1234567890')">View</button>
+                    <p>For Rajkot-based services and support, connect with our trusted distributor by clicking below.
+                    </p>
+                    <button onclick="openModal('Rajendrakumar Lalji', 'Mehulbhai', '98240 63068')">View</button>
                 </div>
             </div>
             <div class="card">
-                <img src="your-image.jpg" alt="Image">
+                <!-- <img src="your-image.jpg" alt="Image"> -->
                 <div class="card-content">
                     <h3>Vapi</h3>
-                    <p>Card description goes here. It can be a small summary of the content.</p>
-                    <button onclick="openModal('ABC Realty', 'John Doe', '+1234567890')">View</button>
+                    <p>Our Vapi distributor is here to help you—click below to start the conversation today!</p>
+                    <button onclick="openModal('Jayesh Corporation', 'Jigneshbhai', '98250 43052')">View</button>
                 </div>
             </div>
             <div class="card">
-                <img src="your-image.jpg" alt="Image">
+                <!-- <img src="your-image.jpg" alt="Image"> -->
                 <div class="card-content">
                     <h3>Bhuj</h3>
-                    <p>Card description goes here. It can be a small summary of the content.</p>
-                    <button onclick="openModal('ABC Realty', 'John Doe', '+1234567890')">View</button>
+                    <p>Want to explore opportunities or get help in Bhuj? Connect with our local distributor now.</p>
+                    <button onclick="openModal('Trimurti Enterprise', 'Rajnibhai', '93282 12225')">View</button>
                 </div>
             </div>
             <div class="card">
-                <img src="your-image.jpg" alt="Image">
+                <!-- <img src="your-image.jpg" alt="Image"> -->
                 <div class="card-content">
                     <h3>Jetpur</h3>
-                    <p>Card description goes here. It can be a small summary of the content.</p>
-                    <button onclick="openModal('ABC Realty', 'John Doe', '+1234567890')">View</button>
+                    <p>Reach out to our Jetpur distributor for personalized support and collaboration—just one click
+                        away!</p>
+                    <button onclick="openModal('Murli Manohar', 'Dilipbhai', '98240 11682')">View</button>
                 </div>
             </div>
-            
+
         </div>
-        
+
         <div class="modal" id="modal">
-    <div class="modal-content">
-        <h3 id="modal-title">Broker Details</h3>
-        <p><strong>Company Name:</strong> <span id="modal-company"></span></p>
-        <p><strong>Broker Name:</strong> <span id="modal-broker"></span></p>
-        <p><strong>Contact No:</strong> <span id="modal-contact"></span></p>
-        <button class="close" onclick="closeModal()">Close</button>
-    </div>
-</div>
-    
+            <div class="modal-content"
+                style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+                <h3 id="modal-title" style="margin-bottom: 10px;">Broker Details</h3>
+                <p style="margin-bottom: 5px;"><strong>Company:</strong> <span id="modal-company"></span></p>
+                <p style="margin-bottom: 5px;"><strong>Broker Name:</strong> <span id="modal-broker"></span></p>
+                <p style="margin-bottom: 5px;"><strong>Contact No:</strong> <span id="modal-contact"></span></p>
+                <button class="close" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+
         <script>
-           function openModal(company, broker, contact) {
-        document.getElementById("modal-company").textContent = company;
-        document.getElementById("modal-broker").textContent = broker;
-        document.getElementById("modal-contact").textContent = contact;
-        document.getElementById("modal").style.display = "flex";
-    }
+            function openModal(company, broker, contact) {
+                document.getElementById("modal-company").textContent = company;
+                document.getElementById("modal-broker").textContent = broker;
+                document.getElementById("modal-contact").textContent = contact;
+                document.getElementById("modal").style.display = "flex";
+            }
             function closeModal() {
                 document.getElementById('modal').style.display = 'none';
             }
         </script>
-    
+
+
     </section>
 
     <footer class="footer">
@@ -423,43 +432,43 @@
             <p>Copyright © 2025 SAVANNAH CONSUMER PRODUCTS PRIVATE LIMITED. All Rights Reserved</p>
         </div>
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".product-slider", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            1024: { slidesPerView: 3, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 15 },
-            480: { slidesPerView: 2, spaceBetween: 10 },
-            425:{ slidesPerView: 1, spaceBetween: 10 },
-            320: { slidesPerView: 1, spaceBetween: 5 },
-        }
-    });
-});
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".product-slider", {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1024: { slidesPerView: 3, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 15 },
+                    480: { slidesPerView: 2, spaceBetween: 10 },
+                    425: { slidesPerView: 1, spaceBetween: 10 },
+                    320: { slidesPerView: 1, spaceBetween: 5 },
+                }
+            });
+        });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener("click", function() {
-        navLinks.classList.toggle("active");
-    });
-});
-</script>
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
