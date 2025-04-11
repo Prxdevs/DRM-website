@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 
@@ -86,19 +87,19 @@
         <div class="divider"></div>
         <p>
           <i class="fas fa-map-marker-alt"></i>
-          <strong>Corporate Office:</strong> SAVANNAH CONSUMER PRODUCTS PRIVATE LIMITED, B-106, South City-1,
-          Sector 30, Gurugram, Haryana -122001, India
+          <strong>Corporate Office:</strong> NH-8, At. Jetpur-382427<br />
+          Ta. Dascroi, Dist. Ahmedabad, Gujarat.
         </p>
-        <p>
+        <!-- <p>
           <i class="fas fa-map-marker-alt"></i>
           <strong>Factory Address:</strong> Khasra No. 1/14-17, Village - Jadoli, Panauri Road, Tehsil -
           Gharaunda, Distt. Karnal, Haryana - 132114, India
+        </p> -->
+        <p>
+          <i class="fas fa-phone-alt"></i> +91-93755 62000
         </p>
         <p>
-          <i class="fas fa-phone-alt"></i> +91-7303096264
-        </p>
-        <p>
-          <i class="fas fa-envelope"></i> info@jashnfoods.com
+          <i class="fas fa-envelope"></i> dwarkeshricemill5028@gmail.com
         </p>
       </div>
       <div class="footer-section follow-us">
@@ -115,22 +116,57 @@
         <h3>Useful Links</h3>
         <div class="divider"></div>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./index.html">Products</a></li>
+          <li><a href="./index.html">Outlets</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-section logo">
         <img src="./images/drmlogo.jpg" alt="Jashn Foods Logo">
-        <p>Jashn- A Treasure Trove of Pure, Aromatic, and Premium Quality Rice.</p>
+        <p>DRM-Dwarkesh Rice Mill, Premium Quality Rice</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright © 2025 SAVANNAH CONSUMER PRODUCTS PRIVATE LIMITED. All Rights Reserved</p>
+      <p>Copyright © 2025 Dwarkesh Rice Mill. All Rights Reserved.</p>
     </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Swiper(".product-slider", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1024: { slidesPerView: 3, spaceBetween: 20 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          480: { slidesPerView: 2, spaceBetween: 10 },
+          425: { slidesPerView: 1, spaceBetween: 10 },
+          320: { slidesPerView: 1, spaceBetween: 5 },
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 
 </html>
