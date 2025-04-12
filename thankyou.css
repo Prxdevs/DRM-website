@@ -57,5 +57,5 @@ body {
 }
 
 .redirect:onclick{
-    
+    box-shadow: #fff 0px;
 }
