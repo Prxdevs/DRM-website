@@ -754,3 +754,98 @@ header {
         display: block;
     }
 }
+
+/*  */
+/* Hide juice by default on all screens */
+.juice {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .juice {
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+    }
+
+    .juice img {
+        display: block;
+        animation: float 4s ease-in-out infinite;
+        width: 150%;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translate(-50%, -48%);
+        }
+
+        50% {
+            transform: translate(-50%, -52%);
+        }
+
+        100% {
+            transform: translate(-50%, -48%);
+        }
+    }
+}
+
+
+
+/* @media screen and (min-width: 500px) and (max-width: 760px) {
+    .juice {
+        position: absolute;
+        top: 32%;
+        left: 28%;
+        z-index: 1;
+    }
+
+    .juice img {
+        animation: float 4s ease-in-out infinite;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1050px) {
+    .juice {
+        position: absolute;
+        top: 40%;
+        left: 28%;
+        z-index: 1;
+    }
+
+    .juice img {
+        animation: float 4s ease-in-out infinite;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1500px) {
+    .juice {
+        position: absolute;
+        top: 40%;
+        left: 28%;
+        z-index: 1;
+    }
+
+    .juice img {
+        animation: float 4s ease-in-out infinite;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1900px) {
+    .juice {
+        position: absolute;
+        top: 55%;
+        left: 28%;
+        z-index: 1;
+    }
+
+    .juice img {
+        animation: float 4s ease-in-out infinite;
+        width: 35%;
+    }
+} */
