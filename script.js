@@ -1,4 +1,27 @@
 // Mobile Menu Toggle
+gsap.to("#header", {
+    backgroundColor: '#fff',
+    duration: 4
+})
+
+gsap.from('#headd', {
+    // x: -15,
+    opacity: 0,
+    duration: 3
+})
+
+document.getElementById('redirectBtn').addEventListener('click', function () {
+    // Animate the whole body or a specific wrapper
+    gsap.to('body', {
+        opacity: 0,
+        duration: 0.5,
+        onComplete: function () {
+            // Redirect after fade-out
+            window.location.href = './index.html';
+        }
+    });
+});
+
 document.querySelector(".menu-toggle").addEventListener("click", function () {
     document.querySelector(".nav-links").classList.toggle("active");
 });

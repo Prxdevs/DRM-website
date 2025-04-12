@@ -19,7 +19,7 @@
 <body>
 
     <!-- Header Section -->
-    <header>
+    <header id="header">
         <div class="container">
             <!-- Logo -->
             <div class="logo">
@@ -69,7 +69,7 @@
         <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button> -->
         <!-- <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
     </section>
-    <script>
+    <!-- <script>
         let currentIndex = 0;
         const slides = document.querySelectorAll(".slide");
         const totalSlides = slides.length;
@@ -85,7 +85,7 @@
 
             document.querySelector(".slider-container").style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-    </script>
+    </script> -->
 
     <!-- Features Section -->
 
@@ -437,7 +437,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             new Swiper(".product-slider", {
                 slidesPerView: 3,
@@ -469,9 +469,15 @@
                 navLinks.classList.toggle("active");
             });
         });
-    </script>
+    </script> -->
 
     <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
+        integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>

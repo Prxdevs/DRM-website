@@ -1,0 +1,61 @@
+/* css boiler plate code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#page1 {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+
+#page2 {
+    width: 100%;
+    height: 100%;
+    background-color: #e7e7e7;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 h1 {
+    font-size: 10vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#page3 {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+
+.redirect {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.redirect:hover {
+    cursor: pointer;
+    box-shadow: #111 2px 4px;
+}
+
+.redirect:onclick{
+    box-shadow: #fff 0px;
+}

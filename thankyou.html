@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./thankyou.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images/drmlogo.jpg" alt="Logo">
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html" style="color: rgb(79, 49, 0);">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <!-- <li class="dropdown">
+                        <a href="#">PRODUCTS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="highlight-line"></li> 
+                            <li><a href="#">Basmati Rice</a></li>
+                            <li><a href="#">Brown Rice</a></li>
+                            <li><a href="#">Organic Rice</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="./index.html#product-section">Products</a></li>
+                    <li><a href="./index.html#outlet-section">Outlets</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Icon -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="page2" style="display: flex; flex-direction: column;">
+        <h1>
+            ThankYou
+        </h1>
+        <p id="headd">
+            Your Mail is submitted. We will reach out to you soon...
+        </p>
+        <br />
+        <button id="redirectBtn" class="redirect">
+            Redirect to Main Page
+        </button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <div class="divider"></div>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <strong>Corporate Office:</strong> NH-8, At. Jetpur-382427<br />
+                    Ta. Dascroi, Dist. Ahmedabad, Gujarat.
+                </p>
+                <!-- <p>
+              <i class="fas fa-map-marker-alt"></i>
+              <strong>Factory Address:</strong> Khasra No. 1/14-17, Village - Jadoli, Panauri Road, Tehsil -
+              Gharaunda, Distt. Karnal, Haryana - 132114, India
+            </p> -->
+                <p>
+                    <i class="fas fa-phone-alt"></i> +91-93755 62000
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> dwarkeshricemill5028@gmail.com
+                </p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="divider"></div>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section useful-links">
+                <h3>Useful Links</h3>
+                <div class="divider"></div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./index.html">Products</a></li>
+                    <li><a href="./index.html">Outlets</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section logo">
+                <img src="./images/drmlogo.jpg" alt="Jashn Foods Logo">
+                <p>DRM-Dwarkesh Rice Mill, Premium Quality Rice</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 Dwarkesh Rice Mill. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToHome() {
+            console.log('hello')
+            window.location.href = './index.html';
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
+        integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
