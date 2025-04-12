@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <!-- Custom CSS -->
+    <!-- aos css link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -53,11 +57,22 @@
         </div>
     </header>
 
+    <div class="juice" data-aos="fade-down" data-aos-duration="1000" style="z-index: 1;">
+        <img style="display:block; margin-left:auto; margin-right:auto;" src="./images/Food_Bag_Packaging_Mockup_04.png"
+            alt="">
+    </div>
+
     <!-- Slider Section -->
-    <section class="slider">
+    <section class="slider" style="padding-top: 10px;">
         <div class="slider-container">
             <div class="slide">
-                <img src="./images/mainposter4.png" alt="Slide 1">
+                <picture>
+                    <!-- Image for mobile devices -->
+                    <source media="(max-width: 450px)" srcset="./images/mobileposter.png" />
+
+                    <!-- Default image for tablet/desktop -->
+                    <img src="./images/mainposter4.jpg" alt="Slide 1" />
+                </picture>
             </div>
             <!-- <div class="slide">
                 <img src="./images/slider2.png" alt="Slide 2">
@@ -91,11 +106,9 @@
 
     <section class="features">
         <div style="display: flex; flex-direction: column; align-items: center;">
-            <h2 style="font-size: 36px;">Best Basmati Rice Manufacturers, Exporters & Suppliers in India</h2>
+            <h2 class="secondsectionheader">Best Kollam Rice Manufacturers & Suppliers in India</h2>
             <img src="./images/wheat.png" width="20px" />
-            <p class="subtitle" style="margin: 20px auto 0; max-width: 720px; text-align: center;">Jashn is an effort to
-                make your everyday mealtime a flavorful celebration. We strive to
-                bring aromatic basmati rice to your plate — directly from paddy fields.</p>
+            <p class="subtitle" style="margin: 20px auto 0; max-width: 720px; text-align: center;">Welcome to DRM - Dwarkesh Rice Mill. We believe in provinding best quality kollam rice from farms to your kitchen and your plate.</p>
 
             <div class="features-grid" style="margin-top: 20px auto 0; max-width: 1200px;">
                 <div class="feature-box">
@@ -135,19 +148,21 @@
             <!-- Text Content -->
             <div style="flex: 1; max-width: 50%; min-width: 300px;">
                 <h2 style="font-size: 32px; font-weight: bold; color: #222; margin-bottom: 15px; text-align: left;">
-                    Leading manufacturer, supplier & exporter of Indian basmati rice
+                    Finest and Purest Quality, Every Grain Matters
                 </h2>
                 <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 10px; text-align: left;">
-                    Jashn Foods is a leading supplier, producer, and exporter of the best quality basmati rice in India.
-                    The company mills, processes, packages, and supplies premium basmati rice across India.
-                    We have all varieties, including Raw, Parboiled, Creamy Sella, and Golden Sella basmati rice ready
-                    to be exported to other parts of the world.
+                    At Dwarkesh Rice Mill, we take pride in offering only the finest and purest rice to our valued
+                    customers. Each grain is carefully selected, cleaned, and processed using state-of-the-art
+                    technology. We ensure that the nutritional value, aroma, and taste of our rice remain intact from
+                    farm to plate. Our commitment to purity starts right from the sourcing of premium paddy from trusted
+                    farmers. No chemical polishing or artificial enhancements are used—just naturally rich, delicious
+                    rice.
                 </p>
                 <p style="font-size: 16px; color: #555; line-height: 1.5; text-align: left;">
-                    Jashn Basmati Rice is rich in taste, texture, and fragrance. It is grown and harvested in perfect
-                    conditions.
-                    Then, it is hygienically processed in our advanced unit and packaged according to industry
-                    standards.
+                    Hygienic packaging ensures that the rice reaches your kitchen in perfect
+                    condition. Whether it’s for daily meals or special occasions, our rice adds unmatched flavor and
+                    texture to every bite. Customer satisfaction and well-being are at the heart of everything we do.
+                    Dwarkesh Rice Mill stands as a symbol of trust, purity, and excellence in every grain.
                 </p>
             </div>
 
@@ -176,19 +191,22 @@
             <!-- Text Content -->
             <div style="flex: 1; max-width: 50%; min-width: 300px;">
                 <h2 style="font-size: 28px; font-weight: bold; color: #222; margin-bottom: 15px; text-align: left;">
-                    Leading manufacturer, supplier & exporter of Indian basmati rice
+                    Legacy Since 1970 – A Journey of Trust and Excellence
                 </h2>
                 <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 10px; text-align: left;">
-                    Jashn Foods is a leading supplier, producer, and exporter of the best quality basmati rice in India.
-                    The company mills, processes, packages, and supplies premium basmati rice across India.
-                    We have all varieties, including Raw, Parboiled, Creamy Sella, and Golden Sella basmati rice ready
-                    to be exported to other parts of the world.
+                    Since 1970, Dwarkesh Rice Mill has been deeply rooted in India’s rich agricultural tradition.
+                    Founded on the values of hard work, honesty, and commitment, we have evolved alongside the rice
+                    industry while staying true to our origins. With over five decades of experience, we understand the
+                    balance between preserving traditional practices and embracing modern technology.
                 </p>
                 <p style="font-size: 16px; color: #555; line-height: 1.5; text-align: left;">
-                    Jashn Basmati Rice is rich in taste, texture, and fragrance. It is grown and harvested in perfect
-                    conditions.
-                    Then, it is hygienically processed in our advanced unit and packaged according to industry
-                    standards.
+                    As we expanded, we focused on quality, customer trust, and long-standing partnerships with
+                    farmers. We believe in ethical sourcing, sustainable farming, and responsible production practices.
+                    Our legacy is more than just rice—it's a story of trust, quality, and a passion for excellence.
+                    Every
+                    grain we produce reflects our journey of growth and dedication. Dwarkesh Rice Mill continues to
+                    serve with the same integrity and excellence that began in 1970, and will continue for generations
+                    to come.
                 </p>
             </div>
 
@@ -436,6 +454,131 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
+    <!--trial code script starts-->
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+
+        TweenMax.from(".logo", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".menu-links ul li", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from(".search", 1, {
+            delay: .5,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".account", 1, {
+            delay: .6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".cart", 1, {
+            delay: .7,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".juice", 1, {
+            delay: 2,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".leaves .layer:nth-child(1)", 2, {
+            delay: 2,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".leaves .layer:nth-child(2)", 2, {
+            delay: 2.1,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".leaves .layer:nth-child(3)", 2, {
+            delay: 2.2,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".leaves .layer:nth-child(4)", 2, {
+            delay: 2.3,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".leaves .layer:nth-child(5)", 2, {
+            delay: 2.5,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".title", 1, {
+            delay: 1,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".tagline", 1, {
+            delay: 1.3,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".pages", 1, {
+            delay: 1.3,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".more", 1, {
+            delay: 1.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".desc", 1, {
+            delay: 1.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".arrows", 1, {
+            delay: 2,
+            opacity: 0,
+            ease: Expo.easeInOut
+        })
+
+    </script>
+
+    <!--trial code script ends-->
 
     <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -472,6 +615,10 @@
     </script> -->
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
         integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
