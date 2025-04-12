@@ -16,7 +16,7 @@
     <!-- aos css link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -58,14 +58,17 @@
     </header>
 
     <div class="juice" data-aos="fade-down" data-aos-duration="1000">
-        <img style="margin-left:auto; margin-right:auto;" src="./images/Food_Bag_Packaging_Mockup_04.png"
-            alt="">
+        <img style="margin-left:auto; margin-right:auto;" src="./images/Food_Bag_Packaging_Mockup_04.png" alt="">
     </div>
 
     <!-- Slider Section -->
-    <section class="slider" style="padding-top: 10px;">
+    <section class="slider" style="padding-top: 10px; z-index: -10;">
         <div class="slider-container">
             <div class="slide">
+                <!-- <img class="random-img" style="width: 10%; position: absolute;" src="./images/02.png">
+                <img class="random-img" style="width: 10%; position: absolute;" src="./images/03.png">
+                <img class="random-img" style="width: 10%; position: absolute;" src="./images/04.png">
+                <img class="random-img" style="width: 10%; position: absolute;" src="./images/06.png"> -->
                 <picture>
                     <!-- Image for mobile devices -->
                     <source media="(max-width: 450px)" srcset="./images/mobileposter.png" />
@@ -582,7 +585,7 @@
 
     <!--trial code script ends-->
 
-    <!-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             new Swiper(".product-slider", {
                 slidesPerView: 3,
@@ -614,7 +617,7 @@
                 navLinks.classList.toggle("active");
             });
         });
-    </script> -->
+    </script>
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
