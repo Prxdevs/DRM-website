@@ -837,7 +837,7 @@ header {
         display: block;
         max-width: 70%;
         position: absolute;
-        top: 100px;
+        top: 180px;
         height: auto;
         animation: float 3s ease-in-out infinite;
         /* Optional: if you want the floating effect */
