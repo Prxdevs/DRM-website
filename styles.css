@@ -10,6 +10,20 @@ body {
     background: #f9f9f9;
 }
 
+#cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1001;
+}
+
 /* Header Styles */
 header {
     width: 100%;
