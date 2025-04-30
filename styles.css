@@ -339,7 +339,7 @@ header {
 
 .video-container iframe {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 30px;
     max-width: 500px;
 }
