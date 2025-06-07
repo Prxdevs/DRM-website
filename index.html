@@ -367,7 +367,7 @@
                             now!
                         </p>
                         <button
-                            onclick="openModal('Shree Tirupati Balaji Trading Company', 'Vijay Bhai', '95127 07260')">View</button>
+                            onclick="openMultipleModal('Shree Tirupati Balaji Trading Company', 'Vijay Bhai', '95127 07260','Shiv Shakti Broker', 'Name', '00000 00000')">View</button>
                     </div>
                 </div>
                 <div class="card">
@@ -410,6 +410,25 @@
                 </div>
             </div>
 
+            <div class="modal2" id="modal2">
+                <div class="modal-content"
+                    style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+                    <h3 id="modal-title" style="margin-bottom: 10px;">Broker Details</h3>
+                    <p style="margin-bottom: 5px;"><strong>Company:</strong> <span id="modal-company1"></span></p>
+                    <p style="margin-bottom: 5px;"><strong>Broker Name:</strong> <span id="modal-broker1"></span></p>
+                    <p style="margin-bottom: 5px;"><strong>Contact No:</strong> <span id="modal-contact1"></span></p>
+                    <div style="width: 100%;">
+                        &nbsp;
+                        <hr/>
+                        &nbsp;
+                    </div>
+                    <p style="margin-bottom: 5px;"><strong>Company:</strong> <span id="modal-company2"></span></p>
+                    <p style="margin-bottom: 5px;"><strong>Broker Name:</strong> <span id="modal-broker2"></span></p>
+                    <p style="margin-bottom: 5px;"><strong>Contact No:</strong> <span id="modal-contact2"></span></p>
+                    <button class="close" onclick="closeModal2()">Close</button>
+                </div>
+            </div>
+
             <script>
                 function openModal(company, broker, contact) {
                     document.getElementById("modal-company").textContent = company;
@@ -417,9 +436,24 @@
                     document.getElementById("modal-contact").textContent = contact;
                     document.getElementById("modal").style.display = "flex";
                 }
+
+                function openMultipleModal(company1, broker1, contact1, company2, broker2, contact2) {
+                    document.getElementById("modal-company1").textContent = company1;
+                    document.getElementById("modal-broker1").textContent = broker1;
+                    document.getElementById("modal-contact1").textContent = contact1;
+                    document.getElementById("modal-company2").textContent = company2;
+                    document.getElementById("modal-broker2").textContent = broker2;
+                    document.getElementById("modal-contact2").textContent = contact2;
+                    document.getElementById("modal2").style.display = "flex";
+                }
+
                 function closeModal() {
                     document.getElementById('modal').style.display = 'none';
                 }
+                function closeModal2() {
+                    document.getElementById('modal2').style.display = 'none';
+                }
+
             </script>
 
 
@@ -432,8 +466,8 @@
                     <div class="divider"></div>
                     <p>
                         <i class="fas fa-map-marker-alt"></i>
-                        <strong>Corporate Office:</strong> Shree Dwarkesh rice mill add karvu & OPP. Gokulesh Rice Mill
-                        ,N.H.08 , JETALPUR<br />
+                        <strong>Corporate Office:</strong> Shree Dwarkesh Rice Mill , N.H.08 ,Opp.Gokulesh rice
+                        mill , JETALPUR .<br />
 
                     </p>
                     <!-- <p>
