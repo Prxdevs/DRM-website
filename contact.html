@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Basmati Rice</title>
+  <title>Contact Us - DRM Kollam Rice</title>
   <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,15 +27,6 @@
         <ul class="nav-links">
           <li><a href="./index.html" style="color: rgb(79, 49, 0);">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <!-- <li class="dropdown">
-                        <a href="#">PRODUCTS <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li class="highlight-line"></li> 
-                            <li><a href="#">Basmati Rice</a></li>
-                            <li><a href="#">Brown Rice</a></li>
-                            <li><a href="#">Organic Rice</a></li>
-                        </ul>
-                    </li> -->
           <li><a href="./index.html#product-section">Products</a></li>
           <li><a href="./index.html#outlet-section">Outlets</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -95,7 +86,7 @@
           
         </p>
         <p> <i class="fas fa-phone-alt"></i>
-          <a href="tel:9375562000">
+          <a href="tel:7878735775">
             7878735775 / 7211153525
           </a>
         </p>
@@ -126,7 +117,7 @@
         </p> -->
         <p>
           <i class="fas fa-phone-alt"></i>
-          <a href="tel:9375562000">
+          <a href="tel:7878735775">
             7878735775 / 7211153525
           </a>
         </p>
@@ -150,13 +141,13 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./index.html">Products</a></li>
-          <li><a href="./index.html">Outlets</a></li>
+          <li><a href="./index.html#product-section">Products</a></li>
+          <li><a href="./index.html#outlet-section">Outlets</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-section logo">
-        <img src="./images/drmlogo.jpg" alt="Jashn Foods Logo">
+        <img src="./images/drmlogo.jpg" alt="DRM Logo">
         <p>DRM-Shree Dwarkesh rice mill, Premium Quality Rice</p>
       </div>
     </div>
@@ -192,57 +183,42 @@
     // 	}
     // }
 
-    const baseURL = 'https://mail.prxdevs.com:2011';
-    const to1 = 'dwarkeshricemill5028@gmail.com';
+    const WEB3FORMS_KEY = 'b35adf81-7a93-4661-b57a-ee3755ac1b5d';
+
     document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('formiiee');
+      const submitBtn = document.getElementById('submitBtn');
 
-      // Select the form element
-      const form1 = document.getElementById('formiiee');
-
-      // Add event listener for form submission
-      form1.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Disable submit button to prevent multiple submissions
-        const submitBtn = document.getElementById('submitBtn');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
         submitBtn.disabled = true;
-        console.log('submitdisabled');
 
-        // Extract form data
-        const formData = {
+        const payload = {
+          access_key: WEB3FORMS_KEY,
+          subject: 'New website inquiry: ' + document.getElementById('inquiryType').value,
+          from_name: 'DRM Website',
           name: document.getElementById('name').value,
           email: document.getElementById('email').value,
           date: document.getElementById('date').value,
           inquiryType: document.getElementById('inquiryType').value,
-          message: document.getElementById('message').value,
-          toEmail: to1
+          message: document.getElementById('message').value
         };
 
-        // Send form data to the server using fetch
-        fetch(`${baseURL}/submitForm`, {
+        fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
         })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
+          .then(response => response.json())
           .then(data => {
-            console.log('Form submission response:', data);
-            form1.reset(); // Reset the form fields
-            window.location.href = '/thankyou.html'; // Redirect to a thank you page
+            if (!data.success) throw new Error(data.message || 'Submission failed');
+            form.reset();
+            window.location.href = './thankyou.html';
           })
           .catch(error => {
             console.error('Error:', error);
             alert('Error submitting form. Please try again.');
-          })
-          .finally(() => {
-            submitBtn.disabled = false; // Re-enable the submit button
+            submitBtn.disabled = false;
           });
       });
     });

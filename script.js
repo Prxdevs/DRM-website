@@ -45,49 +45,61 @@
 var main = document.querySelector("#main");
 var cursor = document.querySelector("#cursor");
 
-main.addEventListener("mousemove", function (dets) {
-    gsap.to(cursor, {
-        x: dets.x,
-        y: dets.y,
+if (main && cursor) {
+    main.addEventListener("mousemove", function (dets) {
+        gsap.to(cursor, {
+            x: dets.x,
+            y: dets.y,
+        })
     })
-})
+}
 
-gsap.to("#header", {
-    backgroundColor: '#fff',
-    duration: 4
-})
+if (document.querySelector("#header")) {
+    gsap.to("#header", {
+        backgroundColor: '#fff',
+        duration: 4
+    })
+}
 
-gsap.from('#headd', {
-    // x: -15,
-    opacity: 0,
-    duration: 3
-})
-
-document.getElementById('redirectBtn').addEventListener('click', function () {
-    // Animate the whole body or a specific wrapper
-    gsap.to('body', {
+if (document.querySelector("#headd")) {
+    gsap.from('#headd', {
         opacity: 0,
-        duration: 0.5,
-        onComplete: function () {
-            // Redirect after fade-out
-            window.location.href = './index.html';
-        }
-    });
-});
+        duration: 3
+    })
+}
 
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-    document.querySelector(".nav-links").classList.toggle("active");
-});
+var redirectBtn = document.getElementById('redirectBtn');
+if (redirectBtn) {
+    redirectBtn.addEventListener('click', function () {
+        // Fade out, then redirect
+        gsap.to('body', {
+            opacity: 0,
+            duration: 0.5,
+            onComplete: function () {
+                window.location.href = './index.html';
+            }
+        });
+    });
+}
+
+var menuToggleBtn = document.querySelector(".menu-toggle");
+if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+        document.querySelector(".nav-links").classList.toggle("active");
+    });
+}
 
 // Slider Functionality
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
+const sliderContainer = document.querySelector(".slider-container");
 
 function moveSlide(step) {
+    if (!sliderContainer || slides.length < 2) return;
     slideIndex += step;
     if (slideIndex >= slides.length) slideIndex = 0;
     if (slideIndex < 0) slideIndex = slides.length - 1;
-    document.querySelector(".slider-container").style.transform = `translateX(${-slideIndex * 100}%)`;
+    sliderContainer.style.transform = `translateX(${-slideIndex * 100}%)`;
 }
 
 // Auto Slide
