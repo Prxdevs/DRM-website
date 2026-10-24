@@ -1,567 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRM | Home</title>
-
-    <!-- Google Fonts - Poppins -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <!-- Custom CSS -->
-    <!-- aos css link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRM Rice — Premium Kolam Rice since 1970 | Shree Dwarkesh Rice Mill, Jetalpur</title>
+  <meta name="description" content="DRM by Shree Dwarkesh Rice Mill — best boiled Kolam rice manufacturers &amp; suppliers in India since 1970. Premium sorted, camera-cleaned old rice from Jetalpur, Gujarat.">
+  <meta name="theme-color" content="#161312">
+  <link rel="canonical" href="https://www.dwarkeshricemill.com/">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DRM — Every grain matters.">
+  <meta property="og:description" content="Premium Kolam rice from Shree Dwarkesh Rice Mill, Jetalpur. Since 1970.">
+  <meta property="og:image" content="https://www.dwarkeshricemill.com/images/mainposter4.png">
+  <meta property="og:url" content="https://www.dwarkeshricemill.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Gujarati:wght@400;600&family=Tiro+Devanagari+Hindi&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Gujarati:wght@400;600&family=Tiro+Devanagari+Hindi&display=swap"></noscript>
+  <link rel="preload" as="image" href="./assets/img/bag-classic.webp" imagesrcset="./assets/img/bag-classic-sm.webp 360w, ./assets/img/bag-classic.webp 564w" imagesizes="(max-width: 960px) 165px, 275px" fetchpriority="high">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Shree Dwarkesh Rice Mill (DRM)",
+    "description": "Premium boiled Kolam rice manufacturers and suppliers since 1970.",
+    "url": "https://www.dwarkeshricemill.com/",
+    "logo": "https://www.dwarkeshricemill.com/images/drmlogo.jpg",
+    "telephone": ["+91-7878735775", "+91-7211153525"],
+    "email": "dwarkeshricemill5028@gmail.com",
+    "foundingDate": "1970",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "N.H. 08, Opp. Gokulesh Rice Mill",
+      "addressLocality": "Jetalpur, Ta. Daskroi",
+      "addressRegion": "Gujarat",
+      "postalCode": "382427",
+      "addressCountry": "IN"
+    },
+    "sameAs": ["https://www.instagram.com/drm_rice/"]
+  }
+  </script>
 </head>
 
-<body>
-    <div id="main">
-        <div id="cursor">
+<body data-hero="dark">
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img class="loader__logo" src="./assets/img/logo.webp" alt="" width="112" height="112">
+      <div class="loader__meta"><span>Shree Dwarkesh Rice Mill</span><span>·</span><span>Since 1970</span></div>
+    </div>
+    <p class="loader__hi">हर पकवान का हीरो</p>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <div class="curtain" aria-hidden="true"><img src="./assets/img/logo.webp" alt=""></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="nav__brand" href="./index.html" aria-label="DRM — Shree Dwarkesh Rice Mill, home">
+      <img src="./assets/img/logo.webp" alt="" width="44" height="44">
+      <span class="nav__word">Shree Dwarkesh<br>Rice Mill</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="./about.html">Our Story</a>
+      <a href="./index.html#collection">Collection</a>
+      <a href="./index.html#outlets">Outlets</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <a class="nav__cta" href="./contact.html" data-magnetic=".2"><span class="dot"></span>Enquire now</a>
+    <button class="nav__burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span></button>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ul class="menu__links">
+      <li><a href="./index.html"><small>01</small>Home</a></li>
+      <li><a href="./about.html"><small>02</small>Our Story</a></li>
+      <li><a href="./index.html#collection"><small>03</small>Collection</a></li>
+      <li><a href="./index.html#outlets"><small>04</small>Outlets</a></li>
+      <li><a href="./contact.html"><small>05</small>Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <span class="hi">हर पकवान का हीरो</span>
+      <a href="tel:+917878735775">+91 78787 35775</a>
+      <a href="mailto:dwarkeshricemill5028@gmail.com">dwarkeshricemill5028@gmail.com</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Introduction" data-hero-stage>
+      <div class="hero__grid wrap">
+        <div class="hero__copy">
+          <span class="eyebrow eyebrow--light" data-hero-in>Est. 1970 — Jetalpur, Gujarat</span>
+          <h1 class="hero__title">
+            <span class="sr-only">DRM — Best boiled Kolam rice manufacturers and suppliers in India. </span>
+            <span data-split-hero aria-hidden="true">Every grain <em>matters.</em></span>
+          </h1>
+          <p class="hero__lead" data-hero-in>Welcome to DRM — Shree Dwarkesh Rice Mill. The best quality boiled Kolam rice, from the farms to your kitchen and your plate.</p>
+          <div class="hero__actions" data-hero-in>
+            <a class="btn btn--light" href="#collection" data-magnetic=".15">Explore the collection <span class="btn__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 1v12M2 8l5 5 5-5"/></svg></span></a>
+            <a class="btn btn--ghost" href="#outlets">Find a distributor</a>
+          </div>
+          <ul class="hero__facts" data-hero-in>
+            <li><b>50+</b><span>Years</span></li>
+            <li><b>4</b><span>Varieties</span></li>
+            <li><b>6</b><span>Cities</span></li>
+            <li class="hero__tag">हर पकवान का हीरो</li>
+          </ul>
         </div>
-        <!-- Header Section -->
-        <header id="header">
-            <div class="container">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="./images/drmlogo.jpg" alt="Logo">
-                </div>
 
-                <!-- Navigation Menu -->
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="./index.html" style="color: rgb(79, 49, 0);">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="#product-section">Products</a></li>
-                        <li><a href="#outlet-section">Outlets</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Mobile Menu Icon -->
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+        <div class="hero__stage" data-range aria-roledescription="carousel" aria-label="The DRM range">
+          <div class="hero__beam" aria-hidden="true"></div>
+          <div class="hero__light" aria-hidden="true"></div>
+          <div class="hero__dust" aria-hidden="true"><i style="--x:12%;--d:0s;--s:4px"></i><i style="--x:24%;--d:-3s;--s:3px"></i><i style="--x:38%;--d:-6s;--s:5px"></i><i style="--x:52%;--d:-1.5s;--s:3px"></i><i style="--x:63%;--d:-4.5s;--s:4px"></i><i style="--x:74%;--d:-2s;--s:6px"></i><i style="--x:86%;--d:-7s;--s:3px"></i><i style="--x:46%;--d:-8s;--s:4px"></i></div>
+          <button type="button" class="hero__bag" data-i="0" data-go="0" data-name="DRM" data-kicker="The Signature" data-glow="rgba(214, 214, 226, .26)" data-depth="26" aria-label="DRM"><span class="hero__bag-in"><img src="./assets/img/bag-classic.webp" srcset="./assets/img/bag-classic-sm.webp 360w, ./assets/img/bag-classic.webp 564w" sizes="(max-width: 960px) 165px, 275px" alt="" width="564" height="1100" fetchpriority="high"></span></button>
+          <button type="button" class="hero__bag" data-i="1" data-go="1" data-name="DRM Gold" data-kicker="Lachkari Kolam" data-glow="rgba(226, 184, 102, .36)" data-depth="18" aria-label="DRM Gold"><span class="hero__bag-in"><img src="./assets/img/bag-gold.webp" srcset="./assets/img/bag-gold-sm.webp 360w, ./assets/img/bag-gold.webp 564w" sizes="(max-width: 960px) 165px, 275px" alt="" width="564" height="1100" fetchpriority="low"></span></button>
+          <button type="button" class="hero__bag" data-i="2" data-go="2" data-name="Red Cherry" data-kicker="Bold &amp; Everyday" data-glow="rgba(214, 52, 52, .30)" data-depth="14" aria-label="Red Cherry"><span class="hero__bag-in"><img src="./assets/img/bag-redcherry.webp" srcset="./assets/img/bag-redcherry-sm.webp 360w, ./assets/img/bag-redcherry.webp 564w" sizes="(max-width: 960px) 165px, 275px" alt="" width="564" height="1100" fetchpriority="low"></span></button>
+          <button type="button" class="hero__bag" data-i="3" data-go="3" data-name="Black Berry" data-kicker="Camera Clean" data-glow="rgba(201, 151, 63, .22)" data-depth="10" aria-label="Black Berry"><span class="hero__bag-in"><img src="./assets/img/bag-blackberry.webp" srcset="./assets/img/bag-blackberry-sm.webp 360w, ./assets/img/bag-blackberry.webp 564w" sizes="(max-width: 960px) 165px, 275px" alt="" width="564" height="1100" fetchpriority="low"></span></button>
+          <div class="hero__floor" aria-hidden="true"></div>
+          <div class="hero__range">
+            <p class="hero__cap" aria-live="polite"><span class="hero__cap-no">01</span><span class="hero__cap-name">DRM</span><span class="hero__cap-kick">The Signature</span></p>
+            <div class="hero__dots" role="group" aria-label="Choose a pack">
+              <button type="button" aria-label="DRM"><i></i></button>
+              <button type="button" aria-label="DRM Gold"><i></i></button>
+              <button type="button" aria-label="Red Cherry"><i></i></button>
+              <button type="button" aria-label="Black Berry"><i></i></button>
             </div>
-        </header>
-
-        <!-- <div class="juice" data-aos="fade-down" data-aos-duration="1000">
-        <img style="margin-left:auto; margin-right:auto;" src="./images/Food_Bag_Packaging_Mockup_04.png" alt="">
-    </div> -->
-        <!-- <div class="juice-container"> -->
-        <div class="juice" data-aos="fade-down" data-aos-duration="1000">
-            <img class="floating-img" src="./images/Food_Bag_Packaging_Mockup_04.png" alt="">
+          </div>
         </div>
-        <!-- </div> -->
+      </div>
+    </section>
 
-
-        <!-- Slider Section -->
-        <section class="slider" style="padding-top: 10px; z-index: -10;">
-            <div class="slider-container">
-                <div class="slide">
-                    <!-- <img class="random-img" style="width: 10%; position: absolute;" src="./images/02.png">
-                <img class="random-img" style="width: 10%; position: absolute;" src="./images/03.png">
-                <img class="random-img" style="width: 10%; position: absolute;" src="./images/04.png">
-                <img class="random-img" style="width: 10%; position: absolute;" src="./images/06.png"> -->
-                    <picture>
-                        <!-- Image for mobile devices -->
-                        <source media="(max-width: 450px)" srcset="./images/mobileposter.png" />
-
-                        <!-- Default image for tablet/desktop -->
-                        <img src="./images/mainposter4.png" alt="Slide 1" />
-                    </picture>
-                </div>
-                <!-- <div class="slide">
-                <img src="./images/slider2.png" alt="Slide 2">
-            </div>
-            <div class="slide">
-                <img src="./images/slider3.jpg" alt="Slide 3">
-            </div> -->
-            </div>
-            <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button> -->
-            <!-- <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
-        </section>
-        <!-- <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll(".slide");
-        const totalSlides = slides.length;
-
-        function moveSlide(direction) {
-            currentIndex += direction;
-
-            if (currentIndex < 0) {
-                currentIndex = totalSlides - 1;
-            } else if (currentIndex >= totalSlides) {
-                currentIndex = 0;
-            }
-
-            document.querySelector(".slider-container").style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-    </script> -->
-
-        <!-- Features Section -->
-
-        <section class="features">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <h2 class="secondsectionheader">Best Boiled Kollam Rice Manufacturers & Suppliers in India</h2>
-                <img src="./images/wheat.png" width="20px" />
-                <p class="subtitle" style="margin: 20px auto 0; max-width: 720px; text-align: center;">Welcome to DRM -
-                    Shree Dwarkesh rice mill. We believe in providing best quality boiled kollam rice from farms to
-                    your
-                    kitchen
-                    and
-                    your plate.</p>
-
-                <div class="features-grid" style="margin: 20px auto 0; max-width: 1200px;">
-                    <div class="feature-box">
-                        <img src="./images/1.png" alt="Quality">
-                        <h3>Assured Quality</h3>
-                        <div class="underline"></div>
-                        <p>We perform a test at every step, right from sourcing to packaging & dispatching.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./images/2.png" alt="Aroma">
-                        <h3>Optimum Aroma</h3>
-                        <div class="underline"></div>
-                        <p>We maintain the right balance of nutritional values & aroma for a delicious treat.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./images/3.png" alt="Prep">
-                        <h3>Simple Prep</h3>
-                        <div class="underline"></div>
-                        <p>Our kollam rice is easy to cook and turns out perfectly every time.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./images/4.png" alt="Packed">
-                        <h3>Perfectly Packed</h3>
-                        <div class="underline"></div>
-                        <p>Our high-tech process ensures the finest quality kollam rice in every pack.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- section 3 -->
-        <!-- Section 3: Two-Column Layout -->
-        <section style="padding: 25px 20px 20px; background-color: #fff;">
-            <div
-                style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; align-items: center; justify-content: center; gap: 20px;">
-
-                <!-- Text Content -->
-                <div style="flex: 1; max-width: 50%; min-width: 300px;">
-                    <h2 style="font-size: 32px; font-weight: bold; color: #222; margin-bottom: 15px; text-align: left;">
-                        Finest and Purest Quality, Every Grain Matters
-                    </h2>
-                    <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 10px; text-align: left;">
-                        At Shree Dwarkesh rice mill, we take pride in offering only the finest and purest rice to our
-                        valued
-                        customers. Each grain is carefully selected, cleaned, and processed using state-of-the-art
-                        technology. We ensure that the nutritional value, aroma, and taste of our rice remain intact
-                        from
-                        farm to plate. Our commitment to purity starts right from the sourcing of premium paddy from
-                        trusted
-                        farmers. No chemical polishing or artificial enhancements are used—just naturally rich,
-                        delicious
-                        rice.
-                    </p>
-                    <p style="font-size: 16px; color: #555; line-height: 1.5; text-align: left;">
-                        Hygienic packaging ensures that the rice reaches your kitchen in perfect
-                        condition. Whether it’s for daily meals or special occasions, our rice adds unmatched flavor and
-                        texture to every bite. Customer satisfaction and well-being are at the heart of everything we
-                        do.
-                        Shree Dwarkesh rice mill stands as a symbol of trust, purity, and excellence in every grain.
-                    </p>
-                </div>
-
-                <!-- Image Section -->
-                <div style="flex: 1; max-width: 50%; min-width: 300px; display: flex; justify-content: center;">
-                    <img src="./images/subposter.jpg" alt="Kollam Rice Products"
-                        style="width: 100%; height: auto; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);">
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <!-- Section 4: Two-Column Layout -->
-        <section style="padding: 25px 20px 20px; background-color: #f9f9f9;">
-            <div
-                style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; align-items: center; justify-content: center; gap: 20px;">
-
-                <!-- Image Section -->
-                <div style="flex: 1; max-width: 50%; min-width: 300px; display: flex; justify-content: center;">
-                    <img src="./images/subposter.jpg" alt="Kollam Rice Products"
-                        style="width: 100%; height: auto; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);">
-                </div>
-
-                <!-- Text Content -->
-                <div style="flex: 1; max-width: 50%; min-width: 300px;">
-                    <h2 style="font-size: 28px; font-weight: bold; color: #222; margin-bottom: 15px; text-align: left;">
-                        Legacy Since 1970 – A Journey of Trust and Excellence
-                    </h2>
-                    <p style="font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 10px; text-align: left;">
-                        Since 1970, Shree Dwarkesh rice mill has been deeply rooted in India’s rich agricultural
-                        tradition.
-                        Founded on the values of hard work, honesty, and commitment, we have evolved alongside the rice
-                        industry while staying true to our origins. With over five decades of experience, we understand
-                        the
-                        balance between preserving traditional practices and embracing modern technology.
-                    </p>
-                    <p style="font-size: 16px; color: #555; line-height: 1.5; text-align: left;">
-                        As we expanded, we focused on quality, customer trust, and long-standing partnerships with
-                        farmers. We believe in ethical sourcing, sustainable farming, and responsible production
-                        practices.
-                        Our legacy is more than just rice—it's a story of trust, quality, and a passion for excellence.
-                        Every
-                        grain we produce reflects our journey of growth and dedication. Shree Dwarkesh rice mill
-                        continues to
-                        serve with the same integrity and excellence that began in 1970, and will continue for
-                        generations
-                        to come.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="why-drm">
-            <h2>Why DRM Kollam Rice</h2>
-            <div style="width: 100%; justify-content: center; ">
-                <img style="width: 20px;" src="./images/wheat.png" alt="Wheat Icon">
-            </div>
-
-            <div class="content">
-                <!-- Video Section -->
-                <div class="video-container">
-                    <iframe width="500" src="https://youtube.com/embed/B2hIImUYO40?si=kAanwis0QsP6GCEB"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-
-                <!-- Features Section -->
-                <div class="features">
-                    <div class="feature">
-                        <img src="./images/checked.png" />
-                        <div>
-                            <h3>Authenticity Promised</h3>
-                            <p>We deliver authentic and premium kollam rice right from paddy fields to your plate.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature">
-                        <img src="./images/credit-card.png" />
-                        <div>
-                            <h3>Secure Payment</h3>
-                            <p>We practice optimum safety & security of your confidential payment details.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature">
-                        <img src="./images/badge.png" />
-                        <div>
-                            <h3>Consistent Quality</h3>
-                            <p>We offer consistent quality across all varieties.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature">
-                        <img src="./images/help-desk.png" />
-                        <div>
-                            <h3>Friendly Support</h3>
-                            <p>Need help? Get in touch with our customer support.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="product-section" class="featured-products">
-            <h2>Feature Products</h2>
-
-
-            <div class="swiper product-slider">
-                <div class="swiper-wrapper">
-                    <!-- Dummy Product 1 -->
-                    <div class="swiper-slide">
-                        <img src="./images/Food_Bag_Packaging_Mockup_04.png" alt="Product 1">
-                        <p>DRM </p>
-                    </div>
-                    <!-- Dummy Product 2 -->
-                    <div class="swiper-slide">
-                        <img src="./images/DRM GOLD RICE.png" alt="Product 2">
-                        <p>DRM Gold</p>
-                    </div>
-                    <!-- Dummy Product 3 -->
-                    <div class="swiper-slide">
-                        <img src="./images/RED CHERRY RICE.png" alt="Product 3">
-                        <p>Redcherry</p>
-                    </div>
-                    <!-- Dummy Product 4 -->
-                    <div class="swiper-slide">
-                        <img src="./images/BLACK BERRY RICE.png" alt="Product 4">
-                        <p>Blackberry</p>
-                    </div>
-                </div>
-
-                <!-- Navigation Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-
-                <!-- Pagination Dots -->
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </section>
-
-
-        <section id="outlet-section" class="featured-products">
-            <h2>Outlets</h2>
-
-
-            <div class="card-container">
-                <div class="card">
-                    <!-- <img src="your-image.jpg" alt="Image"> -->
-                    <div class="card-content">
-                        <h3>Rajkot</h3>
-                        <p>For Rajkot-based services and support, connect with our trusted distributor by clicking
-                            below.
-                        </p>
-                        <button onclick="openModal('Rajendrakumar Lalji', 'Mehulbhai', '98240 63068')">View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- <img src="your-image.jpg" alt="Image"> -->
-                    <div class="card-content">
-                        <h3>Gondal</h3>
-                        <p>Looking to connect with our distributor in Gondal? Click below and get in touch with our
-                            local
-                            expert!</p>
-                        <button onclick="openModal('Rajendrakumar Lalji', 'Mehulbhai', '98240 63068')">View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- <img src="your-image.jpg" alt="Image"> -->
-                    <div class="card-content">
-                        <h3>Surat</h3>
-                        <p>Need assistance or a partnership in Surat? Our distributor is just a click away—reach out
-                            now!
-                        </p>
-                        <button
-                            onclick="openMultipleModal('Shree Tirupati Balaji Trading Company', 'Vijay Bhai', '95127 07260','Shiv Shakti Broker', 'Name', '00000 00000')">View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- <img src="your-image.jpg" alt="Image"> -->
-                    <div class="card-content">
-                        <h3>Vapi</h3>
-                        <p>Our Vapi distributor is here to help you—click below to start the conversation today!</p>
-                        <button onclick="openModal('Jayesh Corporation', 'Jigneshbhai', '98250 43052')">View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- <img src="your-image.jpg" alt="Image"> -->
-                    <div class="card-content">
-                        <h3>Jetpur</h3>
-                        <p>Reach out to our Jetpur distributor for personalized support and collaboration—just one click
-                            away!</p>
-                        <button onclick="openModal('Murli Manohar', 'Dilipbhai', '98240 11682')">View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- <img src="your-image.jpg" alt="Image"> -->
-                    <div class="card-content">
-                        <h3>Bhuj</h3>
-                        <p>Want to explore opportunities or get help in Bhuj? Connect with our local distributor now.
-                        </p>
-                        <button onclick="openModal('Trimurti Enterprise', 'Rajnibhai', '93282 12225')">View</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="modal" id="modal">
-                <div class="modal-content"
-                    style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
-                    <h3 id="modal-title" style="margin-bottom: 10px;">Broker Details</h3>
-                    <p style="margin-bottom: 5px;"><strong>Company:</strong> <span id="modal-company"></span></p>
-                    <p style="margin-bottom: 5px;"><strong>Broker Name:</strong> <span id="modal-broker"></span></p>
-                    <p style="margin-bottom: 5px;"><strong>Contact No:</strong> <span id="modal-contact"></span></p>
-                    <button class="close" onclick="closeModal()">Close</button>
-                </div>
-            </div>
-
-            <div class="modal2" id="modal2">
-                <div class="modal-content"
-                    style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
-                    <h3 id="modal-title" style="margin-bottom: 10px;">Broker Details</h3>
-                    <p style="margin-bottom: 5px;"><strong>Company:</strong> <span id="modal-company1"></span></p>
-                    <p style="margin-bottom: 5px;"><strong>Broker Name:</strong> <span id="modal-broker1"></span></p>
-                    <p style="margin-bottom: 5px;"><strong>Contact No:</strong> <span id="modal-contact1"></span></p>
-                    <div style="width: 100%;">
-                        &nbsp;
-                        <hr/>
-                        &nbsp;
-                    </div>
-                    <p style="margin-bottom: 5px;"><strong>Company:</strong> <span id="modal-company2"></span></p>
-                    <p style="margin-bottom: 5px;"><strong>Broker Name:</strong> <span id="modal-broker2"></span></p>
-                    <p style="margin-bottom: 5px;"><strong>Contact No:</strong> <span id="modal-contact2"></span></p>
-                    <button class="close" onclick="closeModal2()">Close</button>
-                </div>
-            </div>
-
-            <script>
-                function openModal(company, broker, contact) {
-                    document.getElementById("modal-company").textContent = company;
-                    document.getElementById("modal-broker").textContent = broker;
-                    document.getElementById("modal-contact").textContent = contact;
-                    document.getElementById("modal").style.display = "flex";
-                }
-
-                function openMultipleModal(company1, broker1, contact1, company2, broker2, contact2) {
-                    document.getElementById("modal-company1").textContent = company1;
-                    document.getElementById("modal-broker1").textContent = broker1;
-                    document.getElementById("modal-contact1").textContent = contact1;
-                    document.getElementById("modal-company2").textContent = company2;
-                    document.getElementById("modal-broker2").textContent = broker2;
-                    document.getElementById("modal-contact2").textContent = contact2;
-                    document.getElementById("modal2").style.display = "flex";
-                }
-
-                function closeModal() {
-                    document.getElementById('modal').style.display = 'none';
-                }
-                function closeModal2() {
-                    document.getElementById('modal2').style.display = 'none';
-                }
-
-            </script>
-
-
-        </section>
-
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-section contact-us">
-                    <h3>Contact Us</h3>
-                    <div class="divider"></div>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <strong>Corporate Office:</strong> Shree Dwarkesh Rice Mill , N.H.08 ,Opp.Gokulesh rice
-                        mill , JETALPUR .<br />
-
-                    </p>
-                    <!-- <p>
-              <i class="fas fa-map-marker-alt"></i>
-              <strong>Factory Address:</strong> Khasra No. 1/14-17, Village - Jadoli, Panauri Road, Tehsil -
-              Gharaunda, Distt. Karnal, Haryana - 132114, India
-            </p> -->
-                    <p>
-                        <i class="fas fa-phone-alt"></i>
-                        <a href="tel:7878735775">
-                            7878735775 / 7211153525
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope"></i> dwarkeshricemill5028@gmail.com
-                    </p>
-                </div>
-                <div class="footer-section follow-us">
-                    <h3>Follow Us</h3>
-                    <div class="divider"></div>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <!-- <li><a href="#">Twitter</a></li> -->
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Youtube</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section useful-links">
-                    <h3>Useful Links</h3>
-                    <div class="divider"></div>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./index.html#product-section">Products</a></li>
-                        <li><a href="./index.html#outlet-section">Outlets</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section logo">
-                    <img src="./images/drmlogo.jpg" alt="DRM Logo">
-                    <p>DRM-Shree Dwarkesh rice mill, Premium Quality Rice</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2025 Shree Dwarkesh rice mill. All Rights Reserved.</p>
-            </div>
-        </footer>
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Assured Quality <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Optimum Aroma <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Simple Prep <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Perfectly Packed <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Camera Clean <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Since 1970 <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Assured Quality <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Optimum Aroma <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Simple Prep <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Perfectly Packed <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Camera Clean <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+        <span>Since 1970 <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-35 12 12)" fill="currentColor"/></svg></span>
+      </div>
     </div>
 
+    <!-- ============ 01 MANIFESTO ============ -->
+    <section class="section manifesto" id="purity">
+      <div class="wrap">
+        <div class="manifesto__top">
+          <div>
+            <span class="eyebrow">01 — Finest &amp; purest quality</span>
+            <h2 class="manifesto__text" data-reveal>At Shree Dwarkesh Rice Mill, every grain is carefully selected, cleaned and processed with state-of-the-art technology — so its <em>nutrition, aroma and taste</em> stay intact, from farm to plate.</h2>
+          </div>
+          <figure class="quote-card" data-reveal=".1">
+            <p class="hi">हर दाना सिर्फ़ चावल नहीं, पूरी प्लेट का बैलेंस है।</p>
+            <small>Every grain isn't just rice — it's the balance of the whole plate.</small>
+          </figure>
+        </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <div class="manifesto__grid">
+          <p data-reveal>Our commitment to purity starts right from the sourcing of premium paddy from trusted farmers. No chemical polishing or artificial enhancements are used — just naturally rich, delicious rice.</p>
+          <p data-reveal=".08">Hygienic packaging ensures our rice reaches your kitchen in perfect condition. Whether it's for daily meals or special occasions, our rice adds unmatched flavour and texture to every bite. Customer satisfaction and well-being are at the heart of everything we do.</p>
+          <ul class="check-list" data-reveal=".16">
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="9"/><path d="M6 10.5l2.6 2.5L14 7.5"/></svg>Paddy from trusted farmers</li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="9"/><path d="M6 10.5l2.6 2.5L14 7.5"/></svg>No chemical polishing</li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="9"/><path d="M6 10.5l2.6 2.5L14 7.5"/></svg>No artificial enhancements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <!--trial code script starts-->
+    <!-- ============ 02 LEGACY ============ -->
+    <section class="section legacy on-dark" id="legacy">
+      <div class="wrap">
+        <div class="legacy__grid">
+          <div class="legacy__stage" aria-hidden="true">
+            <svg class="legacy__seal" viewBox="0 0 200 200"><defs><path id="lseal" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text font-size="9.2" letter-spacing="3.1" fill="currentColor" font-family="Manrope, sans-serif" font-weight="700"><textPath href="#lseal">SHREE DWARKESH RICE MILL · SINCE 1970 · PREMIUM KOLAM RICE · </textPath></text></svg>
+            <img class="legacy__bag" src="./assets/img/bag-classic.webp" alt="" width="564" height="1100" loading="lazy" data-speed=".12">
+          </div>
+          <div class="legacy__text">
+            <span class="eyebrow eyebrow--gold">02 — Legacy since 1970</span>
+            <h2 class="h2" data-split>A journey of <em>trust</em> &amp; <em>excellence.</em></h2>
+            <p data-reveal>Since 1970, Shree Dwarkesh Rice Mill has been deeply rooted in India's rich agricultural tradition. Founded on the values of hard work, honesty and commitment, we have evolved alongside the rice industry while staying true to our origins. With over five decades of experience, we understand the balance between preserving traditional practices and embracing modern technology.</p>
+            <p data-reveal>As we expanded, we focused on quality, customer trust and long-standing partnerships with farmers. We believe in ethical sourcing, sustainable farming and responsible production. Our legacy is more than just rice — it's a story of trust, quality and a passion for excellence that will continue for generations to come.</p>
+            <div class="stats">
+              <div class="stat"><b>1970</b><span>Founded</span></div>
+              <div class="stat"><b data-count="50" data-suffix="+">50+</b><span>Years</span></div>
+              <div class="stat"><b data-count="4">4</b><span>Varieties</span></div>
+              <div class="stat"><b data-count="6">6</b><span>Cities</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        TweenMax.from(".juice", 1, {
-            delay: 2,
-            opacity: 0,
-            y: -800,
-            ease: Expo.easeInOut
-        })
-    </script>
+    <!-- ============ 03 COLLECTION ============ -->
+    <section class="collection" id="collection" aria-label="The DRM collection" aria-roledescription="carousel">
+      <div class="collection__head">
+        <span class="eyebrow">03 — The Collection</span>
+        <span class="collection__count"><b>01</b> / 04</span>
+      </div>
 
-    <!--trial code script ends-->
+      <article class="prod is-active" data-bg="#c8c8cc" data-fg="#161312" data-ac="#55555b" aria-label="DRM">
+        <div class="prod__word" aria-hidden="true"><div><span>DRM</span><span>DRM</span><span>DRM</span><span>DRM</span><span>DRM</span><span>DRM</span></div></div>
+        <div class="prod__grid">
+          <div class="prod__info">
+            <p class="prod__kicker">01 — The Signature</p>
+            <h3 class="prod__name">DRM</h3>
+            <p class="prod__gu">ઘર ઘર ની પસંદ</p>
+          </div>
+          <div class="prod__bagwrap">
+            <div class="prod__bag">
+              <div class="prod__tilt">
+                <img src="./assets/img/bag-classic.webp" alt="DRM Premium Quality Sorted Rice pack" width="564" height="1100">
+              </div>
+              <div class="prod__floor"></div>
+            </div>
+          </div>
+          <div class="prod__meta">
+            <p>The silver pack that started it all. Premium sorted old rice — full of purity, true in taste, and the choice of home after home.</p>
+            <ul class="tags"><li>Premium Quality</li><li>Sorted Rice</li><li>Old Rice</li></ul>
+            <a class="prod__cta" href="#outlets">Find a distributor <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
+          </div>
+        </div>
+      </article>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new Swiper(".product-slider", {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                breakpoints: {
-                    1024: { slidesPerView: 3, spaceBetween: 20 },
-                    768: { slidesPerView: 2, spaceBetween: 15 },
-                    480: { slidesPerView: 2, spaceBetween: 10 },
-                    425: { slidesPerView: 1, spaceBetween: 10 },
-                    320: { slidesPerView: 1, spaceBetween: 5 },
-                }
-            });
-        });
-    </script>
+      <article class="prod" data-bg="#5b3412" data-fg="#f6dca0" data-ac="#d9a94f" aria-label="DRM Gold">
+        <div class="prod__word" aria-hidden="true"><div><span>Gold</span><span>Gold</span><span>Gold</span><span>Gold</span><span>Gold</span><span>Gold</span></div></div>
+        <div class="prod__grid">
+          <div class="prod__info">
+            <p class="prod__kicker">02 — Lachkari Kolam</p>
+            <h3 class="prod__name">DRM <em>Gold</em></h3>
+            <p class="prod__gu">શુધ્ધતાસે ભરે સ્વાદ મે ખરે…</p>
+          </div>
+          <div class="prod__bagwrap">
+            <div class="prod__bag">
+              <div class="prod__tilt">
+                <img src="./assets/img/bag-gold.webp" alt="DRM Gold Lachkari Kolam Rice pack" width="564" height="1100" loading="lazy">
+              </div>
+              <div class="prod__floor"></div>
+            </div>
+          </div>
+          <div class="prod__meta">
+            <p>Our finest Lachkari Kolam — computerised camera-cleaned so that only the best grains make it into the golden pack.</p>
+            <ul class="tags"><li>Lachkari Kolam</li><li>Camera Clean</li><li>Old Rice</li></ul>
+            <a class="prod__cta" href="#outlets">Find a distributor <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
+          </div>
+        </div>
+      </article>
 
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
-        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
-        integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <article class="prod" data-bg="#8e1517" data-fg="#fff0ea" data-ac="#ff8a7a" aria-label="Red Cherry">
+        <div class="prod__word" aria-hidden="true"><div><span>Red Cherry</span><span>Red Cherry</span><span>Red Cherry</span><span>Red Cherry</span></div></div>
+        <div class="prod__grid">
+          <div class="prod__info">
+            <p class="prod__kicker">03 — Bold &amp; everyday</p>
+            <h3 class="prod__name">Red <em>Cherry</em></h3>
+            <p class="prod__gu">ઘર ઘર ની પસંદ</p>
+          </div>
+          <div class="prod__bagwrap">
+            <div class="prod__bag">
+              <div class="prod__tilt">
+                <img src="./assets/img/bag-redcherry.webp" alt="Red Cherry Premium Quality Sorted Rice pack" width="564" height="1100" loading="lazy">
+              </div>
+              <div class="prod__floor"></div>
+            </div>
+          </div>
+          <div class="prod__meta">
+            <p>Premium sorted old rice in the pack you can't miss — made for dal-chawal days and festive feasts alike.</p>
+            <ul class="tags"><li>Premium Quality</li><li>Sorted Rice</li><li>Old Rice</li></ul>
+            <a class="prod__cta" href="#outlets">Find a distributor <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod" data-bg="#18181b" data-fg="#ece6da" data-ac="#c9973f" aria-label="Black Berry">
+        <div class="prod__word" aria-hidden="true"><div><span>Black Berry</span><span>Black Berry</span><span>Black Berry</span><span>Black Berry</span></div></div>
+        <div class="prod__grid">
+          <div class="prod__info">
+            <p class="prod__kicker">04 — Camera clean</p>
+            <h3 class="prod__name">Black <em>Berry</em></h3>
+            <p class="prod__gu">શુધ્ધતાસે ભરે સ્વાદ મે ખરે…</p>
+          </div>
+          <div class="prod__bagwrap">
+            <div class="prod__bag">
+              <div class="prod__tilt">
+                <img src="./assets/img/bag-blackberry.webp" alt="Black Berry Premium Quality Sorted Rice pack" width="564" height="1100" loading="lazy">
+              </div>
+              <div class="prod__floor"></div>
+            </div>
+          </div>
+          <div class="prod__meta">
+            <p>Computerised camera-clean sorting meets premium aged rice — refined and consistent, grain after grain.</p>
+            <ul class="tags"><li>Camera Clean</li><li>Sorted Rice</li><li>Old Rice</li></ul>
+            <a class="prod__cta" href="#outlets">Find a distributor <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <div class="collection__nav">
+        <div class="collection__thumbs" role="group" aria-label="Choose a variety">
+          <button type="button" aria-label="DRM"><img src="./assets/img/bag-classic-sm.webp" alt="" width="360" height="702" loading="lazy"></button>
+          <button type="button" aria-label="DRM Gold"><img src="./assets/img/bag-gold-sm.webp" alt="" width="360" height="702" loading="lazy"></button>
+          <button type="button" aria-label="Red Cherry"><img src="./assets/img/bag-redcherry-sm.webp" alt="" width="360" height="702" loading="lazy"></button>
+          <button type="button" aria-label="Black Berry"><img src="./assets/img/bag-blackberry-sm.webp" alt="" width="360" height="702" loading="lazy"></button>
+        </div>
+        <div class="collection__line"><i></i></div>
+        <div class="collection__arrows">
+          <button type="button" data-prev aria-label="Previous variety"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7H1M6 2L1 7l5 5"/></svg></button>
+          <button type="button" data-next aria-label="Next variety"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 PROMISES ============ -->
+    <section class="section promise" id="promise" aria-label="Our four promises">
+      <div class="wrap">
+        <div class="promise__head">
+          <div>
+            <span class="eyebrow">04 — The DRM standard</span>
+            <h2 class="h2" data-split>Four promises in <em>every pack.</em></h2>
+          </div>
+          <p class="lead" data-reveal>Best boiled Kolam rice manufacturers &amp; suppliers in India — and these are the four reasons why.</p>
+        </div>
+        <div class="promise__grid">
+          <article class="p-card" data-reveal>
+            <div class="p-card__top"><span class="p-card__num">01</span><svg class="p-card__icon" viewBox="0 0 84 84" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="36" cy="36" r="22"/><path d="M52 52l20 20"/><path d="M26 36.5l7 7 13-14"/></svg></div>
+            <h3>Assured Quality</h3>
+            <p>We perform a test at every step, right from sourcing to packaging &amp; dispatching.</p>
+            <div class="p-card__bar"></div>
+          </article>
+          <article class="p-card" data-reveal=".08">
+            <div class="p-card__top"><span class="p-card__num">02</span><svg class="p-card__icon" viewBox="0 0 84 84" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 46h60c0 14-13 24-30 24S12 60 12 46z"/><path d="M8 46h68"/><path d="M30 36c-4-5 4-8 0-14s4-9 0-14"/><path d="M42 36c-4-5 4-8 0-14s4-9 0-14"/><path d="M54 36c-4-5 4-8 0-14s4-9 0-14"/></svg></div>
+            <h3>Optimum Aroma</h3>
+            <p>We maintain the right balance of nutritional values &amp; aroma for a delicious treat.</p>
+            <div class="p-card__bar"></div>
+          </article>
+          <article class="p-card" data-reveal=".16">
+            <div class="p-card__top"><span class="p-card__num">03</span><svg class="p-card__icon" viewBox="0 0 84 84" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 36h52v22a14 14 0 0 1-14 14H30a14 14 0 0 1-14-14V36z"/><path d="M10 36h64"/><path d="M8 44h8M68 44h8"/><path d="M22 30c6-8 34-8 40 0"/><path d="M42 22v-6"/><circle cx="42" cy="14" r="2.5"/></svg></div>
+            <h3>Simple Prep</h3>
+            <p>Our Kolam rice is easy to cook and turns out perfectly every time.</p>
+            <div class="p-card__bar"></div>
+          </article>
+          <article class="p-card" data-reveal=".24">
+            <div class="p-card__top"><span class="p-card__num">04</span><svg class="p-card__icon" viewBox="0 0 84 84" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h40l4 8-2 50H20l-2-50 4-8z"/><path d="M18 22h48"/><path d="M24 14l2-4M32 14l2-4M40 14l2-4M48 14l2-4M56 14l2-4"/><ellipse cx="42" cy="44" rx="12" ry="8"/><path d="M36 44h12"/></svg></div>
+            <h3>Perfectly Packed</h3>
+            <p>Our high-tech process ensures the finest quality Kolam rice in every pack.</p>
+            <div class="p-card__bar"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 WHY DRM ============ -->
+    <section class="section why" id="why">
+      <div class="wrap">
+        <div class="why__head">
+          <div>
+            <span class="eyebrow">05 — Why DRM</span>
+            <h2 class="h2" data-split>Why DRM <em>Kolam</em> rice.</h2>
+          </div>
+          <p class="lead" data-reveal>From the paddy fields to your plate — watch how every pack of DRM comes to life.</p>
+        </div>
+
+        <div class="film" data-video="B2hIImUYO40" data-cursor="Play" role="button" tabindex="0" aria-label="Play the DRM film">
+          <div class="film__poster" aria-hidden="true">
+            <p class="film__title">From paddy fields<br><em>to your plate.</em></p>
+            <div class="film__bags">
+              <img src="./assets/img/bag-redcherry-sm.webp" srcset="./assets/img/bag-redcherry-sm.webp 360w, ./assets/img/bag-redcherry.webp 564w" sizes="180px" alt="" width="360" height="702" loading="lazy">
+              <img src="./assets/img/bag-classic-sm.webp" srcset="./assets/img/bag-classic-sm.webp 360w, ./assets/img/bag-classic.webp 564w" sizes="180px" alt="" width="360" height="702" loading="lazy">
+              <img src="./assets/img/bag-gold-sm.webp" srcset="./assets/img/bag-gold-sm.webp 360w, ./assets/img/bag-gold.webp 564w" sizes="180px" alt="" width="360" height="702" loading="lazy">
+              <img src="./assets/img/bag-blackberry-sm.webp" srcset="./assets/img/bag-blackberry-sm.webp 360w, ./assets/img/bag-blackberry.webp 564w" sizes="180px" alt="" width="360" height="702" loading="lazy">
+            </div>
+          </div>
+          <span class="film__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span>
+          <div class="film__cap"><span>The DRM film</span><span>Watch ▸</span></div>
+        </div>
+
+        <div class="why__grid">
+          <div class="why__item" data-reveal>
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4l15 6v11c0 9-6.5 16-15 19C13.5 37 7 30 7 21V10l15-6z"/><path d="M15 22l5 5 9-10"/></svg>
+            <h3>Authenticity Promised</h3>
+            <p>We deliver authentic and premium Kolam rice right from paddy fields to your plate.</p>
+          </div>
+          <div class="why__item" data-reveal=".08">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="34" height="23" rx="3"/><path d="M5 18h34"/><path d="M11 27h8"/><circle cx="31" cy="27" r="2"/></svg>
+            <h3>Secure Payment</h3>
+            <p>We practice optimum safety &amp; security of your confidential payment details.</p>
+          </div>
+          <div class="why__item" data-reveal=".16">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="17" r="11"/><path d="M16 26l-4 14 10-5 10 5-4-14"/><path d="M17.5 17l3 3 6-6"/></svg>
+            <h3>Consistent Quality</h3>
+            <p>We offer consistent quality across all varieties.</p>
+          </div>
+          <div class="why__item" data-reveal=".24">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 26v-4a14 14 0 0 1 28 0v4"/><rect x="5" y="24" width="7" height="11" rx="2"/><rect x="32" y="24" width="7" height="11" rx="2"/><path d="M36 35c0 3-4 5-10 5h-3"/></svg>
+            <h3>Friendly Support</h3>
+            <p>Need help? Get in touch with our customer support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 VOICE ============ -->
+    <section class="section voice" id="voice" aria-label="DRM on Instagram">
+      <div class="wrap voice__head">
+        <div>
+          <span class="eyebrow">06 — From our Instagram</span>
+          <p class="voice__tag" data-split>#HarPakwan<em>KaHero</em></p>
+        </div>
+        <a class="btn" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener" data-magnetic=".15">Follow @drm_rice
+          <span class="btn__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
+        </a>
+      </div>
+
+      <div class="voice__rail" data-rail data-cursor="Drag">
+        <a class="post" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <img class="post__logo" src="./assets/img/logo.webp" alt="">
+          <p class="post__line">हर दाना सिर्फ़ चावल नहीं, <b>पूरी प्लेट का बैलेंस</b> है।</p>
+          <p class="post__tr">Every grain isn't just rice — it's the balance of the whole plate.</p>
+        </a>
+        <a class="post post--ink" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <img class="post__logo" src="./assets/img/logo.webp" alt="">
+          <p class="post__line">एक अच्छा मेज़बान <b>चावल पर</b> कभी समझौता नहीं करता।</p>
+          <p class="post__tr">A good host never compromises on rice.</p>
+        </a>
+        <a class="post post--saffron" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <img class="post__logo" src="./assets/img/logo.webp" alt="">
+          <p class="post__line">खिले-खिले दाने, <b>हर बार परफेक्ट।</b></p>
+          <p class="post__tr">Fluffy, separate grains — perfect, every single time.</p>
+        </a>
+        <a class="post post--cherry" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <img class="post__logo" src="./assets/img/logo.webp" alt="">
+          <p class="post__line post__line--en">Always choose <b>DRM</b> rice.</p>
+          <p class="post__tr">— the people who cook with it</p>
+        </a>
+        <a class="post post--brown" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <img class="post__logo" src="./assets/img/logo.webp" alt="">
+          <p class="post__line">बेहतर स्वाद, <b>बेहतरीन खुशबू।</b></p>
+          <p class="post__tr">Better taste, the finest aroma — naturally prepared.</p>
+        </a>
+        <a class="post post--taupe" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <img class="post__logo" src="./assets/img/logo.webp" alt="">
+          <p class="post__line">बिरयानी, पुलाव या <b>दाल-चावल</b> — हर डिश में बढ़ाए स्वाद।</p>
+          <p class="post__tr">Biryani, pulao or dal-chawal — it lifts every dish.</p>
+        </a>
+        <a class="post post--follow" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <p class="post__line post__line--en">See more on @drm_rice</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 07 OUTLETS ============ -->
+    <section class="section outlets on-dark" id="outlets">
+      <div class="wrap">
+        <span class="eyebrow eyebrow--gold">07 — Outlets</span>
+        <h2 class="h2" data-split>Find DRM <em>near you.</em></h2>
+        <p class="lead" data-reveal>Our trusted distributor network across Gujarat. Choose a city to connect with our local partner directly.</p>
+
+        <div class="outlets__grid">
+          <div class="map" data-reveal>
+            <svg id="gj-map" viewBox="0 0 660 480" role="img" aria-label="Map of DRM distributor cities across Gujarat, connected to our head office in Jetalpur"></svg>
+            <div class="map__legend"><span><i class="g"></i>Head office</span><span><i></i>Distributor</span></div>
+          </div>
+
+          <div class="cities">
+            <div class="city" data-city="rajkot">
+              <button class="city__btn" type="button" aria-expanded="false"><span class="city__no">01</span><span class="city__name">Rajkot</span><span class="city__plus" aria-hidden="true"></span></button>
+              <div class="city__body"><div>
+                <div class="city__card"><p class="city__co">Rajendrakumar Lalji</p><p class="city__who">Contact: Mehulbhai</p><a class="city__call" href="tel:+919824063068">Call +91 98240 63068</a></div>
+              </div></div>
+            </div>
+            <div class="city" data-city="gondal">
+              <button class="city__btn" type="button" aria-expanded="false"><span class="city__no">02</span><span class="city__name">Gondal</span><span class="city__plus" aria-hidden="true"></span></button>
+              <div class="city__body"><div>
+                <div class="city__card"><p class="city__co">Rajendrakumar Lalji</p><p class="city__who">Contact: Mehulbhai</p><a class="city__call" href="tel:+919824063068">Call +91 98240 63068</a></div>
+              </div></div>
+            </div>
+            <div class="city" data-city="surat">
+              <button class="city__btn" type="button" aria-expanded="false"><span class="city__no">03</span><span class="city__name">Surat</span><span class="city__plus" aria-hidden="true"></span></button>
+              <div class="city__body"><div>
+                <div class="city__card"><p class="city__co">Shree Tirupati Balaji Trading Company</p><p class="city__who">Contact: Vijay Bhai</p><a class="city__call" href="tel:+919512707260">Call +91 95127 07260</a></div>
+                <div class="city__card"><p class="city__co">Shiv Shakti Broker</p><p class="city__who">For details, call us on <a class="link-u" href="tel:+917878735775">+91 78787 35775</a></p></div>
+              </div></div>
+            </div>
+            <div class="city" data-city="vapi">
+              <button class="city__btn" type="button" aria-expanded="false"><span class="city__no">04</span><span class="city__name">Vapi</span><span class="city__plus" aria-hidden="true"></span></button>
+              <div class="city__body"><div>
+                <div class="city__card"><p class="city__co">Jayesh Corporation</p><p class="city__who">Contact: Jigneshbhai</p><a class="city__call" href="tel:+919825043052">Call +91 98250 43052</a></div>
+              </div></div>
+            </div>
+            <div class="city" data-city="jetpur">
+              <button class="city__btn" type="button" aria-expanded="false"><span class="city__no">05</span><span class="city__name">Jetpur</span><span class="city__plus" aria-hidden="true"></span></button>
+              <div class="city__body"><div>
+                <div class="city__card"><p class="city__co">Murli Manohar</p><p class="city__who">Contact: Dilipbhai</p><a class="city__call" href="tel:+919824011682">Call +91 98240 11682</a></div>
+              </div></div>
+            </div>
+            <div class="city" data-city="bhuj">
+              <button class="city__btn" type="button" aria-expanded="false"><span class="city__no">06</span><span class="city__name">Bhuj</span><span class="city__plus" aria-hidden="true"></span></button>
+              <div class="city__body"><div>
+                <div class="city__card"><p class="city__co">Trimurti Enterprise</p><p class="city__who">Contact: Rajnibhai</p><a class="city__call" href="tel:+919328212225">Call +91 93282 12225</a></div>
+              </div></div>
+            </div>
+            <p class="outlets__note">Want to become a DRM distributor in your city? <a class="link-u" href="./contact.html">Let's talk →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__cta">
+        <div>
+          <span class="eyebrow eyebrow--gold">Let's talk rice</span>
+          <h2 class="display" data-split>Bring DRM to <em>your kitchen.</em></h2>
+        </div>
+        <div class="footer__actions">
+          <a class="btn btn--gold" href="./contact.html" data-magnetic=".15">Enquire now
+            <span class="btn__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
+          </a>
+          <a class="btn btn--ghost" href="tel:+917878735775">Call +91 78787 35775</a>
+        </div>
+      </div>
+
+      <div class="footer__grid">
+        <div>
+          <h3>Corporate office</h3>
+          <p>Shree Dwarkesh Rice Mill<br>N.H. 08, Opp. Gokulesh Rice Mill,<br>Jetalpur, Ta. Daskroi, Dist. Ahmedabad,<br>Gujarat 382427</p>
+        </div>
+        <div>
+          <h3>Talk to us</h3>
+          <ul>
+            <li><a href="tel:+917878735775">+91 78787 35775</a></li>
+            <li><a href="tel:+917211153525">+91 72111 53525</a></li>
+            <li><a href="mailto:dwarkeshricemill5028@gmail.com">dwarkeshricemill5028<br>@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a class="link-u" href="./index.html">Home</a></li>
+            <li><a class="link-u" href="./about.html">Our Story</a></li>
+            <li><a class="link-u" href="./index.html#collection">Collection</a></li>
+            <li><a class="link-u" href="./index.html#outlets">Outlets</a></li>
+            <li><a class="link-u" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul>
+            <li><a class="link-u" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">Instagram — @drm_rice</a></li>
+            <li><a class="link-u" href="https://www.youtube.com/watch?v=B2hIImUYO40" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__word" aria-hidden="true">DRM</div>
+    <div class="wrap">
+      <div class="footer__bottom">
+        <span>© <span data-year-now>2026</span> Shree Dwarkesh Rice Mill. All rights reserved.</span>
+        <span class="gu">શુધ્ધતાસે ભરે સ્વાદ મે ખરે… ઘર ઘર ની પસંદ</span>
+        <a class="to-top" href="#" data-top>Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="./assets/js/site.js" defer></script>
 </body>
-
 </html>

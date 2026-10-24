@@ -1,166 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - DRM Kollam Rice</title>
-  <link rel="stylesheet" href="contact.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Story | DRM — Shree Dwarkesh Rice Mill</title>
+  <meta name="description" content="Founded in 1970, DRM – Shree Dwarkesh Rice Mill has been a trusted name in premium Kolam rice for over five decades.">
+  <meta name="theme-color" content="#161312">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Gujarati:wght@400;600&family=Tiro+Devanagari+Hindi&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Gujarati:wght@400;600&family=Tiro+Devanagari+Hindi&display=swap"></noscript>
+  <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="./images/drmlogo.jpg" alt="Logo">
-      </div>
 
-      <!-- Navigation Menu -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="./index.html" style="color: rgb(79, 49, 0);">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./index.html#product-section">Products</a></li>
-          <li><a href="./index.html#outlet-section">Outlets</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="curtain is-start" aria-hidden="true"><img src="./assets/img/logo.webp" alt=""></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
 
-      <!-- Mobile Menu Icon -->
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="nav__brand" href="./index.html" aria-label="DRM — Shree Dwarkesh Rice Mill, home">
+      <img src="./assets/img/logo.webp" alt="" width="44" height="44">
+      <span class="nav__word">Shree Dwarkesh<br>Rice Mill</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="./index.html">Home</a>
+      <a href="./about.html" aria-current="page">Our Story</a>
+      <a href="./index.html#collection">Collection</a>
+      <a href="./index.html#outlets">Outlets</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <a class="nav__cta" href="./contact.html" data-magnetic=".2"><span class="dot"></span>Enquire now</a>
+    <button class="nav__burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span></button>
   </header>
 
-  <!-- Features Section -->
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ul class="menu__links">
+      <li><a href="./index.html"><small>01</small>Home</a></li>
+      <li><a href="./about.html"><small>02</small>Our Story</a></li>
+      <li><a href="./index.html#collection"><small>03</small>Collection</a></li>
+      <li><a href="./index.html#outlets"><small>04</small>Outlets</a></li>
+      <li><a href="./contact.html"><small>05</small>Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <span class="hi">हर पकवान का हीरो</span>
+      <a href="tel:+917878735775">+91 78787 35775</a>
+      <a href="mailto:dwarkeshricemill5028@gmail.com">dwarkeshricemill5028@gmail.com</a>
+    </div>
+  </div>
 
-  <section class="slider" style="height: 15vh;">
-    <div class="slider-container">
-      <div class="slide">
-        <img src="./images/mainposter4.png" alt="Slide 1">
-      </div>
-      <!-- <div class="slide">
-            <img src="./images/slider2.png" alt="Slide 2">
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero__row">
+          <div>
+            <span class="eyebrow">Our Story — Since 1970</span>
+            <h1 class="display" data-split-hero>Five decades of <em>getting rice right.</em></h1>
+          </div>
+          <div class="page-hero__seal" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><defs><path id="seal" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text font-size="13" letter-spacing="4.2" fill="currentColor" font-family="Manrope, sans-serif" font-weight="700"><textPath href="#seal">SHREE DWARKESH RICE MILL · SINCE 1970 · </textPath></text></svg>
+            <img src="./assets/img/logo.webp" alt="">
+          </div>
         </div>
-        <div class="slide">
-            <img src="./images/slider3.jpg" alt="Slide 3">
-        </div> -->
-    </div>
-    <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button> -->
-    <!-- <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
-  </section>
+      </div>
+    </section>
 
-  <section class="features contact-section">
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <h2 style="font-size: 36px;">Our Story</h2>
-      <img src="./images/wheat.png" width="20px" />
-      <p class="subtitle" style="margin: 20px auto 0; max-width: 720px; text-align: center;">Founded in 1970, DRM –
-        Shree Dwarkesh rice mill has been a trusted name in the rice industry for over five decades. With a deep-rooted
-        commitment to excellence, we specialize in delivering premium-quality rice that meets the highest standards of
-        purity, taste, and nutrition. Our journey reflects a legacy of trust, consistency, and customer satisfaction. At
-        DRM, we believe in combining traditional values with modern technology to ensure that every grain we produce
-        adds nourishment and flavor to meals across the country.</p>
-    </div>
-  </section>
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <p class="story__lead" data-reveal>Founded in 1970, DRM – Shree Dwarkesh Rice Mill has been a trusted name in the rice industry for over five decades. With a deep-rooted commitment to excellence, we specialise in delivering premium-quality rice that meets the highest standards of purity, taste and nutrition.</p>
+        <div class="two-col" style="margin-top:clamp(48px,6vw,96px)">
+          <p class="lead" data-reveal>Our journey reflects a legacy of trust, consistency and customer satisfaction.</p>
+          <p data-reveal=".1">At DRM, we believe in combining traditional values with modern technology to ensure that every grain we produce adds nourishment and flavour to meals across the country.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="story__band on-dark" aria-hidden="true">
+      <div class="legacy__year"><span>1970</span></div>
+      <div class="story__bags">
+        <img src="./assets/img/bag-redcherry.webp" alt="" loading="lazy" data-speed=".14">
+        <img src="./assets/img/bag-classic.webp" alt="" loading="lazy" data-speed=".06">
+        <img src="./assets/img/bag-gold.webp" alt="" loading="lazy" data-speed=".1">
+        <img src="./assets/img/bag-blackberry.webp" alt="" loading="lazy" data-speed=".18">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow">Legacy since 1970</span>
+        <h2 class="h2 h2--lede" data-split>Rooted in tradition. <em>Built for tomorrow.</em></h2>
+        <div class="two-col">
+          <div data-reveal>
+            <p>Since 1970, Shree Dwarkesh Rice Mill has been deeply rooted in India's rich agricultural tradition. Founded on the values of hard work, honesty and commitment, we have evolved alongside the rice industry while staying true to our origins.</p>
+            <p>With over five decades of experience, we understand the balance between preserving traditional practices and embracing modern technology.</p>
+          </div>
+          <div data-reveal=".1">
+            <p>As we expanded, we focused on quality, customer trust and long-standing partnerships with farmers. We believe in ethical sourcing, sustainable farming and responsible production practices.</p>
+            <p>Our legacy is more than just rice — it's a story of trust, quality and a passion for excellence. Every grain we produce reflects our journey of growth and dedication, and we will continue to serve with the same integrity for generations to come.</p>
+          </div>
+        </div>
+
+        <div class="values">
+          <article class="value" data-reveal>
+            <span class="value__n">i.</span>
+            <div><h3>Hard Work</h3><p>The first thing that went into DRM in 1970 — and still the first thing that goes into every pack.</p></div>
+          </article>
+          <article class="value value--dark" data-reveal=".1">
+            <span class="value__n">ii.</span>
+            <div><h3>Honesty</h3><p>No chemical polishing, no artificial enhancements. Just naturally rich, delicious rice.</p></div>
+          </article>
+          <article class="value value--gold" data-reveal=".2">
+            <span class="value__n">iii.</span>
+            <div><h3>Commitment</h3><p>Long-standing partnerships with farmers, ethical sourcing and responsible production.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tagline-band">
+      <div class="wrap">
+        <p class="gu" data-reveal>શુધ્ધતાસે ભરે સ્વાદ મે ખરે…<br>ઘર ઘર ની પસંદ</p>
+        <small data-reveal=".1">Full of purity, true in taste — every home's favourite</small>
+        <div class="tagline-band__cta" data-reveal=".2"><a class="btn" href="./index.html#collection" data-magnetic=".15">Explore the collection <span class="btn__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section contact-us">
-        <h3>Contact Us</h3>
-        <div class="divider"></div>
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          <strong>Corporate Office:</strong> Shree Dwarkesh Rice Mill , N.H.08 ,Opp.Gokulesh rice mill , JETALPUR .<br />
-          
-        </p>
-        <!-- <p>
-          <i class="fas fa-map-marker-alt"></i>
-          <strong>Factory Address:</strong> Khasra No. 1/14-17, Village - Jadoli, Panauri Road, Tehsil -
-          Gharaunda, Distt. Karnal, Haryana - 132114, India
-        </p> -->
-        <p>
-          <i class="fas fa-phone-alt"></i>
-          <a href="tel:7878735775">
-            7878735775 / 7211153525
+    <div class="wrap">
+      <div class="footer__cta">
+        <div>
+          <span class="eyebrow eyebrow--gold">Let's talk rice</span>
+          <h2 class="display" data-split>Bring DRM to <em>your kitchen.</em></h2>
+        </div>
+        <div class="footer__actions">
+          <a class="btn btn--gold" href="./contact.html" data-magnetic=".15">Enquire now
+            <span class="btn__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
           </a>
-        </p>
-        <p>
-          <i class="fas fa-envelope"></i> dwarkeshricemill5028@gmail.com
-        </p>
+          <a class="btn btn--ghost" href="tel:+917878735775">Call +91 78787 35775</a>
+        </div>
       </div>
-      <div class="footer-section follow-us">
-        <h3>Follow Us</h3>
-        <div class="divider"></div>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <!-- <li><a href="#">Twitter</a></li> -->
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Youtube</a></li>
-        </ul>
-      </div>
-      <div class="footer-section useful-links">
-        <h3>Useful Links</h3>
-        <div class="divider"></div>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./index.html#product-section">Products</a></li>
-          <li><a href="./index.html#outlet-section">Outlets</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section logo">
-        <img src="./images/drmlogo.jpg" alt="DRM Logo">
-        <p>DRM-Shree Dwarkesh rice mill, Premium Quality Rice</p>
+
+      <div class="footer__grid">
+        <div>
+          <h3>Corporate office</h3>
+          <p>Shree Dwarkesh Rice Mill<br>N.H. 08, Opp. Gokulesh Rice Mill,<br>Jetalpur, Ta. Daskroi, Dist. Ahmedabad,<br>Gujarat 382427</p>
+        </div>
+        <div>
+          <h3>Talk to us</h3>
+          <ul>
+            <li><a href="tel:+917878735775">+91 78787 35775</a></li>
+            <li><a href="tel:+917211153525">+91 72111 53525</a></li>
+            <li><a href="mailto:dwarkeshricemill5028@gmail.com">dwarkeshricemill5028<br>@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a class="link-u" href="./index.html">Home</a></li>
+            <li><a class="link-u" href="./about.html">Our Story</a></li>
+            <li><a class="link-u" href="./index.html#collection">Collection</a></li>
+            <li><a class="link-u" href="./index.html#outlets">Outlets</a></li>
+            <li><a class="link-u" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul>
+            <li><a class="link-u" href="https://www.instagram.com/drm_rice/" target="_blank" rel="noopener">Instagram — @drm_rice</a></li>
+            <li><a class="link-u" href="https://www.youtube.com/watch?v=B2hIImUYO40" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>Copyright © 2025 Shree Dwarkesh rice mill. All Rights Reserved.</p>
+    <div class="footer__word" aria-hidden="true">DRM</div>
+    <div class="wrap">
+      <div class="footer__bottom">
+        <span>© <span data-year-now>2026</span> Shree Dwarkesh Rice Mill. All rights reserved.</span>
+        <span class="gu">શુધ્ધતાસે ભરે સ્વાદ મે ખરે… ઘર ઘર ની પસંદ</span>
+        <a class="to-top" href="#" data-top>Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      new Swiper(".product-slider", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          1024: { slidesPerView: 3, spaceBetween: 20 },
-          768: { slidesPerView: 2, spaceBetween: 15 },
-          480: { slidesPerView: 2, spaceBetween: 10 },
-          425: { slidesPerView: 1, spaceBetween: 10 },
-          320: { slidesPerView: 1, spaceBetween: 5 },
-        }
-      });
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
-
-      menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-      });
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="./assets/js/site.js" defer></script>
 </body>
-
 </html>
